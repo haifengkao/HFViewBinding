@@ -1,0 +1,6 @@
+framework module HFTableCollectionBindingHelper {
+  umbrella header "Pods-HFTableCollectionBindingHelper_Tests-HFTableCollectionBindingHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

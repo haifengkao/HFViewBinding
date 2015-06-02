@@ -10,29 +10,27 @@
 Pod::Spec.new do |s|
   s.name             = "HFTableCollectionBindingHelper"
   s.version          = "0.1.0"
-  s.summary          = "A short description of HFTableCollectionBindingHelper."
+  s.summary          = "iOS TableView and CollectionView binding helper for MVVM."
   s.description      = <<-DESC
-                       An optional longer description of HFTableCollectionBindingHelper
+                       a binding tool to bind ViewModel with UITableView and UICollectionView
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/HFTableCollectionBindingHelper"
+  s.homepage         = "https://github.com/haifengkao/HFTableCollectionBindingHelper"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Hai Feng Kao" => "haifeng@cocoaspice.in" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/HFTableCollectionBindingHelper.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/haifeng/HFTableCollectionBindingHelper.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'HFTableCollectionBindingHelper' => ['Pod/Assets/*.png']
-  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'KVOMutableArray'
+  s.dependency 'ReactiveCocoa/Core'
 end
