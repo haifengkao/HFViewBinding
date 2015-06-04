@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "562BDF5C4232EECDD6CE22C5"
+               BlueprintIdentifier = "72497282114484D0E9528745"
                BuildableName = "HFTableCollectionBindingHelper.framework"
                BlueprintName = "Pods-HFTableCollectionBindingHelper_Example-HFTableCollectionBindingHelper"
                ReferencedContainer = "container:Pods.xcodeproj">

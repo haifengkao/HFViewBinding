@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <KVOMutableArray.h>
 
-typedef void (^TableSelectionBlock)(id model);
+#import "HFMetaBindingHelper.h"
 
-@interface HFTableViewBindingHelper : NSObject
+@interface HFTableViewBindingHelper : HFMetaBindingHelper
 
-@property (nonatomic, strong) KVOMutableArray* data;
-@property (nonatomic, copy) TableSelectionBlock selectionBlock;
 @property (nonatomic, weak) UITableView* tableView;
-
++ (instancetype)bindingForTableView:(UITableView *)tableView
+                         sourceList:(KVOMutableArray*)source
+                  didSelectionBlock:(HFSelectionBlock)block
+              templateCellClassName:(NSString *)templateCellClass
+                           isNested:(BOOL)isNested;
 @end

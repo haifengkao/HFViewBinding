@@ -1,5 +1,5 @@
 //
-//  HFBindViewDelegate.h
+//  HFBindingViewDelegate.h
 //  SpicyGymLog
 //
 //  Created by Lono on 2015/5/21.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol HFBindViewDelegate <NSObject>
+@protocol HFBindingViewDelegate <NSObject>
 - (void)bindModel:(id)model;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "HFCollectionViewBindingHelper.h"
-#import "HFBindViewDelegate.h"
+#import "HFBindingViewDelegate.h"
 
 #if !defined(SAFE_CAST)
 #define SAFE_CAST(Object, Type) (Type *)safe_cast_helper(Object, [Type class])
@@ -17,7 +17,7 @@ static inline id safe_cast_helper(id x, Class c) {
 #endif
 
 @interface HFCollectionViewBindingHelper()
-@property (nonatomic, strong) NSString * cellIdentifier;
+@property (nonatomic, copy) NSString * cellIdentifier;
 @property (nonatomic, strong) AMBlockToken* primaryToken;
 @property (nonatomic, strong) NSMutableArray* secondaryTokens;
 @property (nonatomic, assign) BOOL isNested;
@@ -62,7 +62,7 @@ static inline id safe_cast_helper(id x, Class c) {
     
     _collectionView = collectionView;
     _data = source;
-    _selectionBlock = block;
+    _selectionBlock = [block copy];
     _isNested = isNested;
     _secondaryTokens = [NSMutableArray new];
     
@@ -277,10 +277,10 @@ static inline id safe_cast_helper(id x, Class c) {
 }
 
 - (UICollectionViewCell *)dequeueCellAndBindInCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
-    id<HFBindViewDelegate> cell = [collectionView dequeueReusableCellWithReuseIdentifier:_cellIdentifier forIndexPath:indexPath];
+    id<HFBindingViewDelegate> cell = [collectionView dequeueReusableCellWithReuseIdentifier:_cellIdentifier forIndexPath:indexPath];
     
     id item = [self itemAtIndexPath:indexPath];
-    if (item && [cell conformsToProtocol:@protocol(HFBindViewDelegate)]) {
+    if (item && [cell conformsToProtocol:@protocol(HFBindingViewDelegate)]) {
         [cell bindModel:item];
     }
     return (UICollectionViewCell *)cell;

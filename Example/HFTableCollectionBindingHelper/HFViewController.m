@@ -7,9 +7,14 @@
 //
 
 #import "HFViewController.h"
+#import "KVOMutableArray.h"
+#import "HFTableViewBindingHelper.h"
+#import "ItemCell.h"
+
 
 @interface HFViewController ()
-
+@property (nonatomic, strong) KVOMutableArray* data;
+@property (nonatomic, strong) HFTableViewBindingHelper* bindingHelper;
 @end
 
 @implementation HFViewController
@@ -17,13 +22,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.data = [KVOMutableArray new];
+    Item *item = [Item new];
+    item.name = @"table view demo";
+    item.viewControllerId = @"TableViewSegue";
+    [self.data addObject:item];
+    
 	// Do any additional setup after loading the view, typically from a nib.
+    typeof(self) __weak selfRef = self;
+    self.bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView sourceList:self.data didSelectionBlock:^(id model) {
+        typeof(self) self = selfRef;
+        [self showDetail:model];
+        
+    } templateCellClassName:@"ItemCell"
+                  isNested:NO];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)showDetail:(id)model
+{
+    Item* item = (Item*)model;
+    [self performSegueWithIdentifier:item.viewControllerId sender:self];
 }
 
 @end

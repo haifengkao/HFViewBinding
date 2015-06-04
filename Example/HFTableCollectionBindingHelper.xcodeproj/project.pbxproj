@@ -23,6 +23,12 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		7A03FDFB7015BB2A51BD6DBA /* Pods_HFTableCollectionBindingHelper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8067B55504B9AADF645D00C4 /* Pods_HFTableCollectionBindingHelper_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F9F9AA151B2039F90038B3BB /* HFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F9AA141B2039F90038B3BB /* HFTableViewController.m */; };
+		F9F9AA161B2039F90038B3BB /* HFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F9AA141B2039F90038B3BB /* HFTableViewController.m */; };
+		F9F9AA191B203B180038B3BB /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F9AA181B203B180038B3BB /* Item.m */; };
+		F9F9AA1A1B203B180038B3BB /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F9AA181B203B180038B3BB /* Item.m */; };
+		F9F9AA1D1B203B4B0038B3BB /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F9AA1C1B203B4B0038B3BB /* ItemCell.m */; };
+		F9F9AA1E1B203B4B0038B3BB /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F9AA1C1B203B4B0038B3BB /* ItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,12 @@
 		9471D2229075D08AA28397B1 /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C20B06BA66A3319C60621AF7 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D2617AB44526560CD3EBC295 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F9F9AA131B2039F90038B3BB /* HFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTableViewController.h; sourceTree = "<group>"; };
+		F9F9AA141B2039F90038B3BB /* HFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTableViewController.m; sourceTree = "<group>"; };
+		F9F9AA171B203B180038B3BB /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		F9F9AA181B203B180038B3BB /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		F9F9AA1B1B203B4B0038B3BB /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		F9F9AA1C1B203B4B0038B3BB /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 		FBE584CBED272F39A64C82C8 /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +149,12 @@
 				6003F5A6195388D20070C39A /* HFViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				F9F9AA131B2039F90038B3BB /* HFTableViewController.h */,
+				F9F9AA141B2039F90038B3BB /* HFTableViewController.m */,
+				F9F9AA171B203B180038B3BB /* Item.h */,
+				F9F9AA181B203B180038B3BB /* Item.m */,
+				F9F9AA1B1B203B4B0038B3BB /* ItemCell.h */,
+				F9F9AA1C1B203B4B0038B3BB /* ItemCell.m */,
 			);
 			name = "Example for HFTableCollectionBindingHelper";
 			path = HFTableCollectionBindingHelper;
@@ -390,9 +408,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F9AA1D1B203B4B0038B3BB /* ItemCell.m in Sources */,
+				F9F9AA191B203B180038B3BB /* Item.m in Sources */,
 				6003F59E195388D20070C39A /* HFAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HFViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F9F9AA151B2039F90038B3BB /* HFTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +421,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F9AA1E1B203B4B0038B3BB /* ItemCell.m in Sources */,
+				F9F9AA1A1B203B180038B3BB /* Item.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				F9F9AA161B2039F90038B3BB /* HFTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

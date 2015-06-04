@@ -1,11 +1,12 @@
 PODS:
   - FBSnapshotTestCase (1.8.1)
   - HFTableCollectionBindingHelper (0.1.0):
-    - KVOMutableArray
+    - KVOMutableArray/ReactiveCocoaSupport
     - ReactiveCocoa/Core
-  - KVOMutableArray (0.2.0):
-    - KVOMutableArray/Core (= 0.2.0)
-  - KVOMutableArray/Core (0.2.0)
+  - KVOMutableArray/Core (0.4.0)
+  - KVOMutableArray/ReactiveCocoaSupport (0.4.0):
+    - KVOMutableArray/Core
+    - ReactiveCocoa/Core
   - ReactiveCocoa/Core (2.5):
     - ReactiveCocoa/no-arc
   - ReactiveCocoa/no-arc (2.5)
@@ -20,8 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
-  HFTableCollectionBindingHelper: f039308f1110d86e9a1580ac28c51195e16679a8
-  KVOMutableArray: 9ff3378d9cf22a71a5c848dfa95888e6d0b58816
+  HFTableCollectionBindingHelper: 4aebd2ab7101f0be838fdbca051a77d121545a43
+  KVOMutableArray: e7f56e9c9008b0498f71863fa7ae306c2c2447f6
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
 COCOAPODS: 0.37.2
