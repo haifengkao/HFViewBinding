@@ -29,6 +29,11 @@
     item.viewControllerId = @"TableViewSegue";
     [self.data addObject:item];
     
+    Item* item2 = [Item new];
+    item2.name = @"grouped table view demo";
+    item2.viewControllerId = @"GroupTableViewSegue";
+    [self.data addObject:item2];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     typeof(self) __weak selfRef = self;
     self.bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView sourceList:self.data didSelectionBlock:^(id model) {
