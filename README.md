@@ -65,6 +65,10 @@ pod "HFTableCollectionBindingHelper"
 MVVM (Model-View-ViewModel) is a popular replacement of original MVC architecture.
 It moves the UI logics from hard-to-test Controller to testable ViewModels. MVVM relies heavily on view bindings. But the available binding libraries ([HRTableCollectionBindingHelper](https://github.com/Rannie/HRTableCollectionBindingHelper), [CETableViewBinding](https://github.com/ColinEberhardt/CETableViewBinding)) don't support table view with multiple sections. Besides, the table view animations of insertion and deletion are disabled in their implmentation, which really annoys me :(
 
+## Credit
+The APIs are referenced from [HRTableCollectionBindingHelper](https://github.com/Rannie/HRTableCollectionBindingHelper).
+The idea of delegate forwarding come from [CETableViewBinding](https://github.com/ColinEberhardt/CETableViewBinding).
+
 ## Requirements
 
 Requires iOS 7.0, and ARC.
