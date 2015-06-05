@@ -23,6 +23,9 @@
     ],
     "ReactiveCocoa/Core": [
 
+    ],
+    "WZProtocolInterceptor": [
+
     ]
   }
 }

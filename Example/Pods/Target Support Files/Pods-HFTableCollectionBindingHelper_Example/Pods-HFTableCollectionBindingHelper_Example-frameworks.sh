@@ -51,9 +51,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'HFTableCollectionBindingHelper.framework'
   install_framework 'KVOMutableArray.framework'
   install_framework 'ReactiveCocoa.framework'
+  install_framework 'WZProtocolInterceptor.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'HFTableCollectionBindingHelper.framework'
   install_framework 'KVOMutableArray.framework'
   install_framework 'ReactiveCocoa.framework'
+  install_framework 'WZProtocolInterceptor.framework'
 fi

@@ -8,10 +8,13 @@
 
 #import "HFTableViewBindingHelper.h"
 #import "HFBindingViewDelegate.h"
+#import "WZProtocolInterceptor.h"
 
 @interface HFTableViewBindingHelper ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) UITableViewCell* templateCell;
 @property (nonatomic, copy) NSString * cellIdentifier;
+@property (nonatomic, strong) WZProtocolInterceptor* delegateInterceptor;
+@property (nonatomic, strong) WZProtocolInterceptor* dataSourceInterceptor;
 @end
 
 @implementation HFTableViewBindingHelper
@@ -22,7 +25,11 @@
               templateCellClassName:(NSString *)templateCellClass
                            isNested:(BOOL)isNested
 {
-    return [[self alloc] initWithTableView:tableView sourceList:source didSelectionBlock:block templateCellClassName:templateCellClass isNested:isNested];
+    return [[self alloc] initWithTableView:tableView
+                                sourceList:source
+                         didSelectionBlock:block
+                     templateCellClassName:templateCellClass
+                                  isNested:isNested];
 }
 
 - (instancetype)initWithTableView:(UITableView *)tableView
@@ -50,10 +57,33 @@
     
     _tableView = tableView;
     
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
+    [self setDelegate:nil]; // init tableView's dataSource and delegagte
+    [self setDataSource:nil];
     
     return self;
+}
+
+- (void)setDataSource:(id<UITableViewDataSource>)dataSource
+{
+    _dataSource = dataSource;
+    WZProtocolInterceptor* dataSourceInterceptor = [[WZProtocolInterceptor alloc]
+                                                 initWithInterceptedProtocol:@protocol(UITableViewDataSource)];
+    dataSourceInterceptor.middleMan = self;
+    dataSourceInterceptor.receiver = dataSource;
+    _dataSourceInterceptor = dataSourceInterceptor;
+    _tableView.dataSource = (id<UITableViewDataSource>) dataSourceInterceptor;
+}
+
+- (void)setDelegate:(id<UITableViewDelegate>)delegate
+{
+    _delegate = delegate;
+    WZProtocolInterceptor* delegateInterceptor = [[WZProtocolInterceptor alloc]
+                                                 initWithInterceptedProtocol:@protocol(UITableViewDelegate)];
+    delegateInterceptor.middleMan = self;
+    delegateInterceptor.receiver = delegate;
+    _delegateInterceptor = delegateInterceptor;
+    
+    _tableView.delegate = (id<UITableViewDelegate>)delegateInterceptor;
 }
 
 #pragma mark - UITableViewDataSource methods
@@ -89,6 +119,36 @@
         }
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         NSAssert(NO, @"TODO");
+    }
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+{
+    KVOMutableArray* fromRow = self.data;
+    KVOMutableArray* toRow = self.data;
+    
+    if (self.isNested) {
+        if (fromIndexPath.section >= self.data.count || toIndexPath.section >= self.data.count)
+        {
+            return;
+        }
+        
+        fromRow = self.data[fromIndexPath.section];
+        toRow = self.data[toIndexPath.section];
+    }
+    
+    if (fromRow == toRow) {
+        // do NOT trigger KVO, otherwise the Cells will be moved again
+        [fromRow.arr exchangeObjectAtIndex:fromIndexPath.row withObjectAtIndex:toIndexPath.row];
+    } else {
+        // do NOT trigger KVO, otherwise the Cells will be moved again
+        id fromObj = fromRow[fromIndexPath.row];
+        [fromRow.arr removeObjectAtIndex:fromIndexPath.row];
+        id toObj = toRow[toIndexPath.row];
+        [toRow.arr removeObjectAtIndex:toIndexPath.row];
+        
+        [toRow.arr insertObject:fromObj atIndex:toIndexPath.row];
+        [fromRow.arr insertObject:toObj atIndex:fromIndexPath.row];
     }
 }
 

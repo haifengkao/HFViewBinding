@@ -1,0 +1,6 @@
+framework module WZProtocolInterceptor {
+  umbrella header "Pods-HFTableCollectionBindingHelper_Example-WZProtocolInterceptor-umbrella.h"
+
+  export *
+  module * { export * }
+}

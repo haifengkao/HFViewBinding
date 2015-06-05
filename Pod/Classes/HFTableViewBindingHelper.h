@@ -13,9 +13,13 @@
 @interface HFTableViewBindingHelper : HFMetaBindingHelper
 
 @property (nonatomic, weak) UITableView* tableView;
+@property (nonatomic, weak) id <UITableViewDelegate>   delegate;
+@property (nonatomic, weak) id <UITableViewDataSource>   dataSource;
+
 + (instancetype)bindingForTableView:(UITableView *)tableView
                          sourceList:(KVOMutableArray*)source
                   didSelectionBlock:(HFSelectionBlock)block
               templateCellClassName:(NSString *)templateCellClass
                            isNested:(BOOL)isNested;
+
 @end

@@ -33,4 +33,5 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'KVOMutableArray/ReactiveCocoaSupport'
   s.dependency 'ReactiveCocoa/Core'
+  s.dependency 'WZProtocolInterceptor'
 end
