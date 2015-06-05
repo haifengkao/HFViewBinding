@@ -17,12 +17,13 @@ Note: collection view support is still WIP.
 KVOMutableArray* someData = [[KVOMutableArray alloc] 
                         initWithMutableArray:[@[@"cell 1", @"cell 2"] mutableCopy]];
 
-HFTableViewBindingHelper* bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView 
-                                                                             sourceList:someData 
-                                                                      didSelectionBlock:^(id model) 
-                                                                    { NSLog(@"clicked on %@", model); } 
-                                                                  templateCellClassName:@"YourCellClass"
-                                                                               isNested:NO];
+HFTableViewBindingHelper* bindingHelper = 
+[HFTableViewBindingHelper bindingForTableView:self.tableView 
+                                   sourceList:someData 
+                            didSelectionBlock:^(id model) 
+                          { NSLog(@"clicked on %@", model); } 
+                        templateCellClassName:@"YourCellClass"
+                                     isNested:NO];
 
 bindingHelper.delegate = self;
 bindingHelper.dataSource = self;
@@ -31,9 +32,9 @@ You have to use `KVOMutableArray` as the mutable array class to inform the obser
 
 The cell must implement `HFBindingViewDelegate` protocol.
 
-The delegate and dataSource settings are optional. If they are set, all delegate methods which are not handled by bindingHelper will be sent to self in the above exmaple.
+The `delegate` and `dataSource` settings are optional. If they are set, all delegate methods which are not handled by bindingHelper will be sent to `self` in the above exmaple.
 
-To support multiple sections, isNested should be set to YES. The each item in the array must be the class of `KVOMutableArray`.
+To support multiple sections, isNested should be set to `YES`. The each item in the array must be the class of `KVOMutableArray`.
 
 ```objc
 KVOMutableArray* firstRow = [[KVOMutableArray alloc] 
@@ -42,13 +43,13 @@ KVOMutableArray* secondRow = [[KVOMutableArray alloc]
                         initWithMutableArray:[@[@"cell 1", @"cell 2"] mutableCopy]];
 KVOMutableArray* someData = [[KVOMutableArray alloc] initWithMutableArray:[@[firstRow, secondRow] mutableCopy]];
 
-HFTableViewBindingHelper* bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView 
-                                                                             sourceList:someData 
-                                                                      didSelectionBlock:^(id model) 
-                                                                        { NSLog(@"clicked on %@", model); } 
-                                                                  templateCellClassName:@"YourCellClass"
-                                                                               isNested:YES];
-
+HFTableViewBindingHelper* bindingHelper = 
+[HFTableViewBindingHelper bindingForTableView:self.tableView 
+                                   sourceList:someData 
+                            didSelectionBlock:^(id model) 
+                          { NSLog(@"clicked on %@", model); } 
+                        templateCellClassName:@"YourCellClass"
+                                     isNested:YES];
 ```
 ## Installation
 
@@ -62,7 +63,7 @@ pod "HFTableCollectionBindingHelper"
 ## Motivation
 
 MVVM (Model-View-ViewModel) is a popular replacement of original MVC architecture.
-It moves the UI logics from hard-to-test Controller to testable ViewModels. MVVM relies heavily on view bindings. But the available binding libraries [HRTableCollectionBindingHelper](https://github.com/Rannie/HRTableCollectionBindingHelper) and [CETableViewBinding](https://github.com/ColinEberhardt/CETableViewBinding)) don't support table view with multiple sections. Besides, the table view animations of insertion and deletion are disabled in their implmentation, which really annoys me.
+It moves the UI logics from hard-to-test Controller to testable ViewModels. MVVM relies heavily on view bindings. But the available binding libraries ([HRTableCollectionBindingHelper](https://github.com/Rannie/HRTableCollectionBindingHelper) [CETableViewBinding](https://github.com/ColinEberhardt/CETableViewBinding)) don't support table view with multiple sections. Besides, the table view animations of insertion and deletion are disabled in their implmentation, which really annoys me :(
 
 ## Author
 
