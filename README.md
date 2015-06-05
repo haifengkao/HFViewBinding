@@ -21,7 +21,7 @@ HFTableViewBindingHelper* bindingHelper =
 [HFTableViewBindingHelper bindingForTableView:self.tableView 
                                    sourceList:someData 
                             didSelectionBlock:^(id model) 
-                          { NSLog(@"clicked on %@", model); } 
+                                             { NSLog(@"clicked on %@", model); } 
                         templateCellClassName:@"YourCellClass"
                                      isNested:NO];
 
@@ -47,7 +47,7 @@ HFTableViewBindingHelper* bindingHelper =
 [HFTableViewBindingHelper bindingForTableView:self.tableView 
                                    sourceList:someData 
                             didSelectionBlock:^(id model) 
-                          { NSLog(@"clicked on %@", model); } 
+                                             { NSLog(@"clicked on %@", model); } 
                         templateCellClassName:@"YourCellClass"
                                      isNested:YES];
 ```
