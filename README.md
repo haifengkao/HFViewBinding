@@ -34,7 +34,7 @@ The cell must implement `HFBindingViewDelegate` protocol.
 
 The `delegate` and `dataSource` settings are optional. If they are set, all delegate methods which are not handled by bindingHelper will be sent to `self` in the above exmaple.
 
-To support multiple sections, isNested should be set to `YES`. The each item in the array must be the class of `KVOMutableArray`.
+To support multiple sections, `isNested` should be set to `YES`. The each item in the array must be the class of `KVOMutableArray`.
 
 ```objc
 KVOMutableArray* firstRow = [[KVOMutableArray alloc] 
@@ -63,11 +63,19 @@ pod "HFTableCollectionBindingHelper"
 ## Motivation
 
 MVVM (Model-View-ViewModel) is a popular replacement of original MVC architecture.
-It moves the UI logics from hard-to-test Controller to testable ViewModels. MVVM relies heavily on view bindings. But the available binding libraries ([HRTableCollectionBindingHelper](https://github.com/Rannie/HRTableCollectionBindingHelper) [CETableViewBinding](https://github.com/ColinEberhardt/CETableViewBinding)) don't support table view with multiple sections. Besides, the table view animations of insertion and deletion are disabled in their implmentation, which really annoys me :(
+It moves the UI logics from hard-to-test Controller to testable ViewModels. MVVM relies heavily on view bindings. But the available binding libraries ([HRTableCollectionBindingHelper](https://github.com/Rannie/HRTableCollectionBindingHelper), [CETableViewBinding](https://github.com/ColinEberhardt/CETableViewBinding)) don't support table view with multiple sections. Besides, the table view animations of insertion and deletion are disabled in their implmentation, which really annoys me :(
+
+## Requirements
+
+Requires iOS 7.0, and ARC.
 
 ## Author
 
 Hai Feng Kao, haifeng@cocoaspice.in
+
+## Contributing
+
+Forks, patches and other feedback are welcome.
 
 ## License
 
