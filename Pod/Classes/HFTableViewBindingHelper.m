@@ -142,19 +142,10 @@
         toRow = self.data[toIndexPath.section];
     }
     
-    if (fromRow == toRow) {
-        // do NOT trigger KVO, otherwise the Cells will be moved again
-        [fromRow.arr exchangeObjectAtIndex:fromIndexPath.row withObjectAtIndex:toIndexPath.row];
-    } else {
-        // do NOT trigger KVO, otherwise the Cells will be moved again
-        id fromObj = fromRow[fromIndexPath.row];
-        [fromRow.arr removeObjectAtIndex:fromIndexPath.row];
-        id toObj = toRow[toIndexPath.row];
-        [toRow.arr removeObjectAtIndex:toIndexPath.row];
-        
-        [toRow.arr insertObject:fromObj atIndex:toIndexPath.row];
-        [fromRow.arr insertObject:toObj atIndex:fromIndexPath.row];
-    }
+    // do NOT trigger KVO, otherwise the Cells will be moved again
+    id fromObj = fromRow[fromIndexPath.row];
+    [fromRow.arr removeObjectAtIndex:fromIndexPath.row];
+    [toRow.arr insertObject:fromObj atIndex:toIndexPath.row];
 }
 
 #pragma mark - UITableViewDelegate methods
