@@ -21,6 +21,7 @@ typedef void (^HFSelectionBlock)(id model);
 - (instancetype)initForSourceList:(KVOMutableArray *)source
                     didSelectionBlock:(HFSelectionBlock)block
                          isNested:(BOOL)isNested NS_DESIGNATED_INITIALIZER;
+- (NSInteger)numberOfSections;
 - (NSInteger)numberOfItemsInSection:(NSInteger)section;
 - (id<HFBindingViewDelegate>)cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)didSelectItemAtIndexPath:(NSIndexPath *)indexPath;

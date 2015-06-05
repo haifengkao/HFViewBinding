@@ -88,6 +88,11 @@
 
 #pragma mark - UITableViewDataSource methods
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return [super numberOfSections];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [super numberOfItemsInSection:section];
 }
