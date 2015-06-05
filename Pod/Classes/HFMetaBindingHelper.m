@@ -76,13 +76,13 @@ static inline id safe_cast_helper(id x, Class c) {
 {
     typeof(self) __weak selfRef = self;
     
-    // observe the existing workout sets
+    // observe the rows change event in each setction
     for (NSUInteger i = 0; i < array.count; ++i) {
         AMBlockToken* token = [self observeRowsInSection:i array:array[i]];
         [secondaryTokens addObject:token];
     }
     
-    // register KVO events
+    // observe the section change event
     AMBlockToken* primaryToken = [array addObserverWithTask:^BOOL(id obj, NSDictionary *change) {
         
         typeof(self) selfObj = selfRef;
