@@ -67,7 +67,10 @@ It moves the UI logics from hard-to-test Controller to testable ViewModels. MVVM
 
 ## Credit
 The APIs are referenced from [HRTableCollectionBindingHelper](https://github.com/Rannie/HRTableCollectionBindingHelper).
-The idea of delegate forwarding come from [CETableViewBinding](https://github.com/ColinEberhardt/CETableViewBinding).
+
+The idea of delegate forwarding comes from [CETableViewBinding](https://github.com/ColinEberhardt/CETableViewBinding).
+
+Big thanks to Rannie and Colin.
 
 ## Requirements
 
