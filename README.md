@@ -8,7 +8,8 @@
 
 UITableView and UICollectionView Binding Helper
 
-This project privides some helper functions to bind mutable array to table views and colllection views. It supports single or multiple sections table views.
+This project privides some helper functions to bind a mutable array to table views or colllection views. It supports single or multiple sections.
+
 Note: collection view support is still WIP.
 
 ## Usage
@@ -16,23 +17,23 @@ Note: collection view support is still WIP.
 KVOMutableArray* someData = [[KVOMutableArray alloc] 
                         initWithMutableArray:[@[@"cell 1", @"cell 2"] mutableCopy]];
 
-HFTableViewBindingHelper* bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView sourceList:someData didSelectionBlock:^(id model) {
-    NSLog(@"clicked on %@", model);
-
-} templateCellClassName:@"YourCellClass"
-isNested:NO];
+HFTableViewBindingHelper* bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView 
+                                                                             sourceList:someData 
+                                                                      didSelectionBlock:^(id model) 
+                                                                    { NSLog(@"clicked on %@", model); } 
+                                                                  templateCellClassName:@"YourCellClass"
+                                                                               isNested:NO];
 
 bindingHelper.delegate = self;
 bindingHelper.dataSource = self;
 ```
-You have to use `KVOMutableArray` as the mutable array class to inform the observers about the mutation event. NSMutableArray doesn't provide such notifications.
-see [KVOMutableArray]() for more details.
+You have to use `KVOMutableArray` as the mutable array class to inform the observers about the mutation event. See [KVOMutableArray](https://github.com/haifengkao/KVOMutableArray) for more details.
 
-The cell must implement HFBindingViewDelegate protocol.
+The cell must implement `HFBindingViewDelegate` protocol.
 
 The delegate and dataSource settings are optional. If they are set, all delegate methods which are not handled by bindingHelper will be sent to self in the above exmaple.
 
-To support multiple sections, isNested should be set to YES. The each item in the array must be the class of KVOMutableArray.
+To support multiple sections, isNested should be set to YES. The each item in the array must be the class of `KVOMutableArray`.
 
 ```objc
 KVOMutableArray* firstRow = [[KVOMutableArray alloc] 
@@ -41,12 +42,14 @@ KVOMutableArray* secondRow = [[KVOMutableArray alloc]
                         initWithMutableArray:[@[@"cell 1", @"cell 2"] mutableCopy]];
 KVOMutableArray* someData = [[KVOMutableArray alloc] initWithMutableArray:[@[firstRow, secondRow] mutableCopy]];
 
-HFTableViewBindingHelper* bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView sourceList:someData didSelectionBlock:^(id model) {
-    NSLog(@"clicked on %@", model);
+HFTableViewBindingHelper* bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView 
+                                                                             sourceList:someData 
+                                                                      didSelectionBlock:^(id model) 
+                                                                        { NSLog(@"clicked on %@", model); } 
+                                                                  templateCellClassName:@"YourCellClass"
+                                                                               isNested:YES];
 
-} templateCellClassName:@"YourCellClass"
-isNested:YES];
-
+```
 ## Installation
 
 HFTableCollectionBindingHelper is available through [CocoaPods](http://cocoapods.org). To install
