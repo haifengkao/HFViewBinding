@@ -32,4 +32,7 @@ typedef void (^HFSelectionBlock)(id model);
 - (void)deleteItemsAtIndexPaths:(NSArray*)indexPaths;
 - (void)reloadItemsAtIndexPaths:(NSArray*)indexPaths;
 - (id<HFBindingViewDelegate>)dequeueReusableCellWithIndexPath:(NSIndexPath*)indexPath;
+- (void)insertSections:(NSIndexSet*)indexes;
+- (void)deleteSections:(NSIndexSet*)indexes;
+- (void)reloadSections:(NSIndexSet*)indexes;
 @end

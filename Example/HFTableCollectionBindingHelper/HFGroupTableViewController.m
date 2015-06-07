@@ -81,6 +81,28 @@
     }
 }
 
+- (IBAction)replace:(id)sender
+{
+    NSUInteger index = arc4random()%self.data.count;
+    
+    if (self.data.count > index) {
+        KVOMutableArray* row = [KVOMutableArray new];
+        self.data[index] = row;
+    }
+}
+
+- (IBAction)addSection:(id)sender
+{
+    KVOMutableArray* row = [KVOMutableArray new];
+    [self.data addObject:row];
+}
+
+- (IBAction)deleteSection:(id)sender
+{
+    if (self.data.count > 0) {
+        [self.data removeLastObject];
+    }
+}
 #pragma mark - Table view data source
 
 /*

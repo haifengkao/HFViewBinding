@@ -76,6 +76,21 @@
                                         <action selector="edit:" destination="gzQ-aR-EBR" id="Oue-18-UY9"/>
                                     </connections>
                                 </barButtonItem>
+                                <barButtonItem title="Replace" id="GII-2e-CJe">
+                                    <connections>
+                                        <action selector="replace:" destination="gzQ-aR-EBR" id="B4R-9O-XdF"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem title="AddSection" id="iRm-W6-C0f">
+                                    <connections>
+                                        <action selector="addSection:" destination="gzQ-aR-EBR" id="vHV-MQ-NNS"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem title="RemoveSection" id="Z5N-Ja-kDQ">
+                                    <connections>
+                                        <action selector="deleteSection:" destination="gzQ-aR-EBR" id="6p2-9q-QRB"/>
+                                    </connections>
+                                </barButtonItem>
                             </items>
                         </toolbar>
                         <prototypes>

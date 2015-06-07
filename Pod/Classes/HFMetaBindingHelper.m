@@ -88,7 +88,7 @@ static inline id safe_cast_helper(id x, Class c) {
         typeof(self) selfObj = selfRef;
         NSIndexSet *indexes = change[NSKeyValueChangeIndexesKey];
         NSNumber *kind = change[NSKeyValueChangeKindKey];
-        NSArray* new = change[NSKeyValueChangeNewKey];
+        NSArray* new = SAFE_CAST(change[NSKeyValueChangeNewKey], NSArray);
         
         if (indexes == nil || indexes.count <= 0){
             return YES; // Nothing to do
@@ -96,25 +96,15 @@ static inline id safe_cast_helper(id x, Class c) {
         
         // stop the observation if the seciton is removed
         if ([kind integerValue] == NSKeyValueChangeRemoval){
-            NSArray* beRemovedTokens = [selfObj.secondaryTokens objectsAtIndexes:indexes];
-            for (AMBlockToken* token in beRemovedTokens) {
-                [token removeObserver];
-            }
-            [selfObj.secondaryTokens removeObjectsAtIndexes:indexes];
+            [selfObj deleteRowsAtIndexes:indexes tokens:selfObj.secondaryTokens];
+            [selfObj deleteSections:indexes];
         } else if ([kind integerValue] == NSKeyValueChangeInsertion) {
-            NSMutableArray* tokens = [NSMutableArray new];
-            // observe the new rows
-            
-            NSUInteger __block itemId = 0;
-            [indexes enumerateIndexesUsingBlock:^(NSUInteger sectionId, BOOL *stop) {
-                AMBlockToken* token = [selfObj observeRowsInSection:sectionId array:new[itemId]];
-                
-                [tokens addObject:token];
-                ++itemId;
-                *stop = NO;
-            }];
-            
-            [selfObj.secondaryTokens insertObjects:tokens atIndexes:indexes];
+            [selfObj insertRowsAtIndexes:indexes tokens:selfObj.secondaryTokens data:new];
+            [selfObj insertSections:indexes];
+        } else if ([kind integerValue] == NSKeyValueChangeReplacement) {
+            [selfObj deleteRowsAtIndexes:indexes tokens:selfObj.secondaryTokens];
+            [selfObj insertRowsAtIndexes:indexes tokens:selfObj.secondaryTokens data:new];
+            [selfObj reloadSections:indexes];
         }
         
         return YES;
@@ -261,5 +251,47 @@ static inline id safe_cast_helper(id x, Class c) {
 {
     NSAssert(NO, @"abstract function");
     return nil;
+}
+
+- (void)insertSections:(NSIndexSet*)indexes
+{
+    NSAssert(NO, @"abstract function");
+}
+
+- (void)deleteSections:(NSIndexSet*)indexes
+{
+    NSAssert(NO, @"abstract function");
+}
+
+- (void)reloadSections:(NSIndexSet*)indexes
+{
+    NSAssert(NO, @"abstract function");
+}
+
+#pragma mark - private
+- (void)insertRowsAtIndexes:(NSIndexSet*)indexes tokens:(NSMutableArray*)tokens data:(NSArray*)new
+{
+    NSMutableArray* toBeAddedTokens = [NSMutableArray new];
+    
+    // observe the new rows
+    NSUInteger __block itemId = 0;
+    [indexes enumerateIndexesUsingBlock:^(NSUInteger sectionId, BOOL *stop) {
+        AMBlockToken* token = [self observeRowsInSection:sectionId array:new[itemId]];
+        
+        [toBeAddedTokens addObject:token];
+        ++itemId;
+        *stop = NO;
+    }];
+    
+    [tokens insertObjects:toBeAddedTokens atIndexes:indexes];
+}
+
+- (void)deleteRowsAtIndexes:(NSIndexSet*)indexes tokens:(NSMutableArray*)tokens
+{
+    NSArray* beRemovedTokens = [tokens objectsAtIndexes:indexes];
+    for (AMBlockToken* token in beRemovedTokens) {
+        [token removeObserver];
+    }
+    [tokens removeObjectsAtIndexes:indexes];
 }
 @end

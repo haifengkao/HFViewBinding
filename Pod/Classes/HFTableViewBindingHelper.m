@@ -189,4 +189,18 @@
     return cell;
 }
 
+- (void)insertSections:(NSIndexSet*)indexes
+{
+    [self.tableView insertSections:indexes withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)deleteSections:(NSIndexSet*)indexes
+{
+    [self.tableView deleteSections:indexes withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)reloadSections:(NSIndexSet*)indexes
+{
+    [self.tableView reloadSections:indexes withRowAnimation:UITableViewRowAnimationAutomatic];
+}
 @end
