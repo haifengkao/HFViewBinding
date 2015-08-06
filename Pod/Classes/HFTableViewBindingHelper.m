@@ -57,8 +57,8 @@
     
     _tableView = tableView;
     
-    [self setDelegate:nil]; // init tableView's dataSource and delegagte
-    [self setDataSource:nil];
+    [self setDelegate:tableView.delegate]; // init tableView's dataSource and delegagte
+    [self setDataSource:tableView.dataSource];
     
     return self;
 }
