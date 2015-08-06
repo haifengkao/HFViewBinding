@@ -46,6 +46,28 @@
     return self;
 }
 
++ (instancetype)bindingForTableView:(UITableView *)tableView
+                              sourceList:(KVOMutableArray*)source
+                       didSelectionBlock:(HFSelectionBlock)block
+                     cellReuseIdentifier:(NSString *)reuseIdentifier
+                                isNested:(BOOL)isNested
+{
+    return [[self alloc] initWithTableView:tableView sourceList:source didSelectionBlock:block cellReuseIdentifier:reuseIdentifier isNested:isNested];
+}
+
+- (instancetype)initWithTableView:(UITableView *)tableView
+                       sourceList:(KVOMutableArray*)source
+                didSelectionBlock:(HFSelectionBlock)block
+            cellReuseIdentifier:(NSString *)reuseIdentifier
+                         isNested:(BOOL)isNested
+{
+    self = [self initWithTableView:tableView sourceList:source didSelectionBlock:block isNested:isNested];
+    if (self) {
+        _cellIdentifier = reuseIdentifier;
+    }
+    return self;
+}
+
 - (instancetype)initWithTableView:(UITableView *)tableView
                        sourceList:(KVOMutableArray*)source
                 didSelectionBlock:(HFSelectionBlock)block

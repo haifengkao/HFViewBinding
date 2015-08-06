@@ -53,11 +53,47 @@
                         <outlet property="tableView" destination="2Bo-dI-Brs" id="oOq-DQ-bj1"/>
                         <segue destination="2An-9Z-Q1B" kind="push" identifier="TableViewSegue" id="vgg-8q-PWR"/>
                         <segue destination="gzQ-aR-EBR" kind="push" identifier="GroupTableViewSegue" id="TCi-E6-xgQ"/>
+                        <segue destination="ZQX-sI-NZ2" kind="push" identifier="CollectionViewSegue" id="nuY-i8-mZF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="596" y="332"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="Z9o-VQ-4xD">
+            <objects>
+                <collectionViewController id="ZQX-sI-NZ2" customClass="HFCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="f2r-DI-CYv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rzk-uo-jEQ">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ubX-Pk-nQh" customClass="HFCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ZQX-sI-NZ2" id="3Xa-Yg-bAp"/>
+                            <outlet property="delegate" destination="ZQX-sI-NZ2" id="jy6-Z0-e72"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="RDP-W6-Trz"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kU6-Mw-DX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="1148"/>
         </scene>
         <!--Group Table View Controller-->
         <scene sceneID="hoO-gF-AaH">

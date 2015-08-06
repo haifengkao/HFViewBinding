@@ -22,4 +22,9 @@
               templateCellClassName:(NSString *)templateCellClass
                            isNested:(BOOL)isNested;
 
++ (instancetype)bindingForTableView:(UITableView *)tableView
+                              sourceList:(KVOMutableArray*)source
+                       didSelectionBlock:(HFSelectionBlock)block
+                     cellReuseIdentifier:(NSString *)reuseIdentifier
+                           isNested:(BOOL)isNested;
 @end
