@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HFTableCollectionBindingHelper"
-  s.version          = "0.4.0"
+  s.version          = "0.5.0"
   s.summary          = "iOS table view and collection view binding helper for MVVM."
   s.description      = <<-DESC
                        helper functions to bind UITableView or UICollectionView instances to ViewModels in MVVM architecture
