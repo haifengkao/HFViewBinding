@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_HFTableCollectionBindingHelper_Example_KVOMutableArray : NSObject
-@end
-@implementation PodsDummy_Pods_HFTableCollectionBindingHelper_Example_KVOMutableArray
-@end

@@ -7,6 +7,4 @@ end
 
 target 'HFTableCollectionBindingHelper_Tests', :exclusive => true do
   pod "HFTableCollectionBindingHelper", :path => "../"
-
-  pod 'FBSnapshotTestCase'
 end

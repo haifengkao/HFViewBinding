@@ -1,11 +1,10 @@
 PODS:
-  - FBSnapshotTestCase (1.8.1)
-  - HFTableCollectionBindingHelper (0.1.0):
+  - HFTableCollectionBindingHelper (0.3.0):
     - KVOMutableArray/ReactiveCocoaSupport
     - ReactiveCocoa/Core
     - WZProtocolInterceptor
-  - KVOMutableArray/Core (0.4.0)
-  - KVOMutableArray/ReactiveCocoaSupport (0.4.0):
+  - KVOMutableArray/Core (1.0.1)
+  - KVOMutableArray/ReactiveCocoaSupport (1.0.1):
     - KVOMutableArray/Core
     - ReactiveCocoa/Core
   - ReactiveCocoa/Core (2.5):
@@ -14,7 +13,6 @@ PODS:
   - WZProtocolInterceptor (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - HFTableCollectionBindingHelper (from `../`)
 
 EXTERNAL SOURCES:
@@ -22,10 +20,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
-  HFTableCollectionBindingHelper: 13d3caecd3db1abcb005b5bcfb859421c557002f
-  KVOMutableArray: e7f56e9c9008b0498f71863fa7ae306c2c2447f6
+  HFTableCollectionBindingHelper: 568140d53a08b6cda5c1d282b3450974971b25c4
+  KVOMutableArray: dae012f13563e749a0486a9f61ad38556a97e617
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   WZProtocolInterceptor: 56c395e4b3323140421eba99546be362aabc041e
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

@@ -1,6 +1,0 @@
-framework module WZProtocolInterceptor {
-  umbrella header "Pods-HFTableCollectionBindingHelper_Tests-WZProtocolInterceptor-umbrella.h"
-
-  export *
-  module * { export * }
-}

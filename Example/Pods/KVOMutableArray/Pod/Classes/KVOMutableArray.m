@@ -1,56 +1,141 @@
 #import "KVOMutableArray.h"
+#import "KVOMutableArrayObserver.h"
 
+@interface KVOMutableArray()
+@property (nonatomic, strong) KVOMutableArrayObserver* observer;
+@end
 
 @implementation KVOMutableArray
+
+- (NSMutableArray*)arr
+{
+    return self.observer.arr;
+}
+
+- (instancetype)initWithMutableArray:(NSMutableArray*)array
+{
+    if((self = [super init]))
+    {
+        _observer = [[KVOMutableArrayObserver alloc] initWithMutableArray:array];
+    }
+    return self;
+}
 
 - (instancetype)init
 {
     return [self initWithMutableArray:[[NSMutableArray alloc] init]];
 }
-            
-- (instancetype)initWithMutableArray:(NSMutableArray*)array
+
+- (instancetype)initWithObjects:(const id [])objects count:(NSUInteger)cnt;
 {
-    if((self = [super init]))
-    {
-        self.arr = array;
-    }
-    return self;
+    NSMutableArray* arr = [[NSMutableArray alloc] initWithObjects:objects count:cnt];
+    return [self initWithMutableArray:arr];
+}
+
+- (instancetype)initWithCapacity:(NSUInteger)numItems
+{
+    NSMutableArray* arr = [[NSMutableArray alloc]  initWithCapacity:numItems];
+    return [self initWithMutableArray:arr];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    NSMutableArray* arr = [[NSMutableArray alloc] initWithCoder:aDecoder];
+    //    KVOMutableArrayObserver* observer = [aDecoder decodeObjectForKey:@"observer"];
+    return [self initWithMutableArray:arr];
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder;
+{
+    [self.observer.arr encodeWithCoder:encoder];
+    //    [encoder encodeObject:self.observer forKey:@"observer"];
 }
 
 - (BOOL)isEqualToArray:(KVOMutableArray*)array
 {
+    if (![array isKindOfClass:[KVOMutableArray class]]) {
+        // I guess array is NSArray
+        return NO;
+    }
+    
     return [self.arr isEqualToArray:array.arr];
 }
 
-- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(id __unsafe_unretained [])buffer count:(NSUInteger)len
+#pragma mark - NSArray subclassing methods
+/*
+  Any subclass of NSArray must override the primitive instance methods count and objectAtIndex:. 
+  These methods must operate on the backing store that you provide for the elements of the collection.
+  For this backing store you can use a static array, a standard NSArray object, or some other 
+  data type or mechanism. You may also choose to override, partially or fully, any other NSArray method 
+  for which you want to provide an alternative implementation.
+ */
+- (NSUInteger)count
 {
-    NSUInteger arrayIndex = (NSUInteger)state->state;
-    NSUInteger arraySize = [self.arr count];
-    NSUInteger bufferIndex = 0;
-    
-    while ((arrayIndex < arraySize) && (bufferIndex < len)) {
-        buffer[bufferIndex] = (self.arr)[arrayIndex];
-        arrayIndex++;
-        bufferIndex++;
-    }
-    
-    state->state = (unsigned long)arrayIndex;
-    state->itemsPtr = buffer; // Assigning '__autoreleasing id *' to '__unsafe_unretained id*' changes retain/release properties of pointer
-    //state->mutationsPtr = (unsigned long *)self;
-    state->mutationsPtr = &state->extra[0]; //TODO: mutationPtr is disabled
-    return bufferIndex;
+    return [self.observer countOfArr];
 }
 
-- (AMBlockToken*)addObserverWithTask:(AMBlockTask)task
-{    
-    return [self addObserverForKeyPath:@"arr" task:task];
+- (id)objectAtIndex:(NSUInteger)index {
+    return [self.observer objectInArrAtIndex:index];
 }
 
-#pragma mark - convenience functions
+#pragma mark - NSArray subclassing methods, not on Apple's doc but required
+- (id)firstObject
+{
+    return self.arr.firstObject;
+}
+
+- (id)lastObject
+{
+    return self.arr.lastObject;
+}
+
+#pragma mark - NSMutableArray subclassing methods
+
+/*
+ NSMutableArray defines five primitive methods:
+ insertObject:atIndex:
+ removeObjectAtIndex:
+ addObject:
+ removeLastObject
+ replaceObjectAtIndex:withObject:
+ */
+- (void)insertObject:(id)obj atIndex:(NSUInteger)index {
+    [self.observer insertObject:obj inArrAtIndex:index];
+}
+
+- (void)removeObjectAtIndex:(NSUInteger)index {
+    [self.observer removeObjectFromArrAtIndex:index];
+}
+
 - (void)addObject:(id)obj
 {
-    [self insertObject:obj inArrAtIndex:[self.arr count]];
+    [self.observer insertObject:obj inArrAtIndex:[self.arr count]];
 }
+
+- (void)removeLastObject
+{
+    NSMutableArray* arr = [self.observer mutableArrayValueForKey:@"arr"];
+    [arr removeLastObject];
+}
+
+- (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)obj {
+    [self.observer replaceObjectInArrAtIndex:index withObject:obj];
+}
+
+#pragma mark - not required immutable convenience functions
+//- (id)objectAtIndexedSubscript:(NSUInteger)idx
+//{
+//    return [self.arr objectAtIndexedSubscript:idx];
+//}
+//
+//- (NSUInteger)indexOfObject:(id)object
+//{
+//    return [self.arr indexOfObject:object];
+//}
+
+#pragma mark - mutable convenience functions
+// we need to keep the following methods for perfomance reasons
+// the default NSMutableArray implementation will send the insertion event one by one, which is inefficient
 
 - (void)addObjectsFromArray:(NSArray*)array
 {
@@ -80,131 +165,73 @@
 //    [arr removeAllObjects];
 }
 
-- (void)removeLastObject
-{
-    NSMutableArray* arr = [self mutableArrayValueForKey:@"arr"];
-    [arr removeLastObject];
-}
-
-- (NSUInteger)count
-{
-    return [self countOfArr];
-}
-
-- (id)objectAtIndex:(NSUInteger)index {
-    return [self objectInArrAtIndex:index];
-}
-
-- (id)objectAtIndexedSubscript:(NSUInteger)idx
-{
-    return [self.arr objectAtIndexedSubscript:idx];
-}
-
-- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx
-{
-    // the implementation of replaceObjectAtIndex uses setObject:atIndexedSubscript: of self.arr
-    [self replaceObjectAtIndex:idx withObject:obj];
-}
-
-- (void)removeObject:(id)anObject
-{    
-    NSMutableArray* arr = [self mutableArrayValueForKey:@"arr"];
-    [arr removeObject: anObject];
-}
-
-- (void)exchangeObjectAtIndex:(NSUInteger)idx1 withObjectAtIndex:(NSUInteger)idx2
-{
-    id obj1 = [self objectAtIndex:idx1];
-    id obj2 = [self objectAtIndex:idx2];
-    
-    if (!obj1 || !obj2) {
-        return;
-    }
-    [self replaceObjectAtIndex:idx1 withObject:obj2];
-    [self replaceObjectAtIndex:idx2 withObject:obj1];
-}
-
-- (void)insertObject:(id)obj atIndex:(NSUInteger)index {
-    [self insertObject:obj inArrAtIndex:index];
-}
-
-- (void)removeObjectAtIndex:(NSUInteger)index {
-    [self removeObjectFromArrAtIndex:index];
-}
-
-- (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)obj {
-    [self replaceObjectInArrAtIndex:index withObject:obj];
-}
 
 - (void)insertObjects:(NSArray *)objects atIndexes:(NSIndexSet *)indexes
 {
-    [self insertArr:objects atIndexes:indexes];
+    [self.observer insertArr:objects atIndexes:indexes];
 }
 
 - (void)removeObjectsAtIndexes:(NSIndexSet *)indexes
 {
-   [self removeArrAtIndexes:indexes];
+   [self.observer removeArrAtIndexes:indexes];
 }
 
 - (void)replaceObjectsAtIndexes:(NSIndexSet *)indexes withObjects:(NSArray *)objects
 {
-    [self replaceArrAtIndexes:indexes withArr:objects];
+    [self.observer replaceArrAtIndexes:indexes withArr:objects];
 }
 
-#pragma mark - Getter Indexed Accessors
-- (NSUInteger)countOfArr {
-    return [self.arr count];
-}
+#pragma mark - not required mutable convenience functions
+// the abstract NSMutableArray can handle the following methods correctly
 
-- (id)objectInArrAtIndex:(NSUInteger)index {
-    if (index >= self.arr.count) {
-        return nil;
-    }
-    return (self.arr)[index];
-}
+//- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx
+//{
+//    // the implementation of replaceObjectAtIndex uses setObject:atIndexedSubscript: of self.arr
+//    [self replaceObjectAtIndex:idx withObject:obj];
+//}
 
-// Implementing this method is optional, but offers additional performance gains. This method corresponds to the NSArray method getObjects:range:.
-- (void)getArr:(id __unsafe_unretained*)buffer range:(NSRange)inRange
+//- (void)removeObject:(id)anObject
+//{    
+//    NSMutableArray* arr = [self.observer mutableArrayValueForKey:@"arr"];
+//    [arr removeObject: anObject];
+//}
+
+//- (void)exchangeObjectAtIndex:(NSUInteger)idx1 withObjectAtIndex:(NSUInteger)idx2
+//{
+//    id obj1 = [self objectAtIndex:idx1];
+//    id obj2 = [self objectAtIndex:idx2];
+//    
+//    if (!obj1 || !obj2) {
+//        return;
+//    }
+//    [self replaceObjectAtIndex:idx1 withObject:obj2];
+//    [self replaceObjectAtIndex:idx2 withObject:obj1];
+//}
+
+//- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(id __unsafe_unretained [])buffer count:(NSUInteger)len
+//{
+//    NSUInteger arrayIndex = (NSUInteger)state->state;
+//    NSUInteger arraySize = [self.arr count];
+//    NSUInteger bufferIndex = 0;
+//    
+//    while ((arrayIndex < arraySize) && (bufferIndex < len)) {
+//        buffer[bufferIndex] = (self.arr)[arrayIndex];
+//        arrayIndex++;
+//        bufferIndex++;
+//    }
+//    
+//    state->state = (unsigned long)arrayIndex;
+//    state->itemsPtr = buffer; // Assigning '__autoreleasing id *' to '__unsafe_unretained id*' changes retain/release properties of pointer
+//    //state->mutationsPtr = (unsigned long *)self;
+//    state->mutationsPtr = &state->extra[0]; //TODO: mutationPtr is disabled
+//    return bufferIndex;
+//}
+
+#pragma mark - NSCopying
+- (id)copyWithZone:(NSZone *)zone
 {
-    // Return the objects in the specified range in the provided buffer.
-    [self.arr getObjects:buffer range:inRange];
-}
-
-#pragma mark - Mutable Indexed Accessors
-- (void)replaceObjectInArrAtIndex:(NSUInteger)index withObject:(id)obj
-{
-    (self.arr)[index] = obj;
-}
-
-- (void)replaceArrAtIndexes:(NSIndexSet*)indexes withArr:(NSArray*)array
-{
-    [self.arr replaceObjectsAtIndexes:indexes withObjects:array];
-}
-
-- (void)removeObjectFromArrAtIndex:(NSUInteger)index
-{
-    [self.arr removeObjectAtIndex:index];
-}
-
-- (void)removeArrAtIndexes:(NSIndexSet *)indexes
-{
-    [self.arr removeObjectsAtIndexes:indexes];
-}
-
-- (void)insertObject:(id)obj inArrAtIndex:(NSUInteger)index
-{
-    [self.arr insertObject:obj atIndex:index];
-}
-
-- (void)insertArr:(NSArray *)array atIndexes:(NSIndexSet *)indexes
-{
-    [self.arr insertObjects:array atIndexes:indexes];
-}
-
-#pragma mark - immutable functions
-- (NSUInteger)indexOfObject:(id)object
-{
-    return [self.arr indexOfObject:object];
+    //  may return a NSArray, beware!!!
+    return [self.arr copy];
 }
 
 #pragma mark - NSMutableCopying
@@ -212,5 +239,12 @@
     KVOMutableArray* mutableSelf = [[KVOMutableArray allocWithZone:zone] initWithMutableArray:[self.arr mutableCopyWithZone:zone]];
     return mutableSelf;
 }
+
+#pragma mark - KVO
+- (AMBlockToken*)addObserverWithTask:(AMBlockTask)task
+{    
+    return [self.observer addObserverWithTask:task];
+}
+
 @end
 

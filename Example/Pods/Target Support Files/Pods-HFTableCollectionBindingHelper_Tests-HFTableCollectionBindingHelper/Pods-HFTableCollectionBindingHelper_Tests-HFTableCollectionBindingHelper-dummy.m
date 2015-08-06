@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_HFTableCollectionBindingHelper_Tests_HFTableCollectionBindingHelper : NSObject
-@end
-@implementation PodsDummy_Pods_HFTableCollectionBindingHelper_Tests_HFTableCollectionBindingHelper
-@end
