@@ -3,8 +3,8 @@ PODS:
     - KVOMutableArray/ReactiveCocoaSupport
     - ReactiveCocoa/Core
     - WZProtocolInterceptor
-  - KVOMutableArray/Core (1.0.1)
-  - KVOMutableArray/ReactiveCocoaSupport (1.0.1):
+  - KVOMutableArray/Core (1.0.2)
+  - KVOMutableArray/ReactiveCocoaSupport (1.0.2):
     - KVOMutableArray/Core
     - ReactiveCocoa/Core
   - ReactiveCocoa/Core (2.5):
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   HFTableCollectionBindingHelper: 568140d53a08b6cda5c1d282b3450974971b25c4
-  KVOMutableArray: dae012f13563e749a0486a9f61ad38556a97e617
+  KVOMutableArray: f9c017c80845f0345e066df6d21bd870170539bc
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   WZProtocolInterceptor: 56c395e4b3323140421eba99546be362aabc041e
 
