@@ -53,6 +53,31 @@ static inline id safe_cast_helper(id x, Class c) {
     return self;
 }
 
++ (instancetype)bindingForCollectionView:(UICollectionView *)collectionView
+                              sourceList:(KVOMutableArray*)source
+                       didSelectionBlock:(HFSelectionBlock)block
+                         cellReuseIdentifier:(NSString *)reuseIdentifier
+                                isNested:(BOOL)isNested
+{
+    return [[self alloc] initWithCollectionView:collectionView
+                                     sourceList:source
+                              didSelectionBlock:block
+                                cellReuseIdentifier:reuseIdentifier
+                                       isNested:isNested];
+}
+
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView
+                            sourceList:(KVOMutableArray*)source
+                     didSelectionBlock:(HFSelectionBlock)block
+                       cellReuseIdentifier:(NSString *)reuseIdentifier
+                              isNested:(BOOL)isNested
+{
+    self = [self initWithCollectionView:collectionView sourceList:source didSelectionBlock:block isNested:isNested];
+    if (self) {
+        _cellIdentifier = reuseIdentifier;
+    }
+    return self;
+}
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView
                        sourceList:(KVOMutableArray*)source
