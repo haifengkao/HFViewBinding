@@ -10,13 +10,6 @@
 #import "HFBindingViewDelegate.h"
 #import "WZProtocolInterceptor.h"
 
-#if !defined(SAFE_CAST)
-#define SAFE_CAST(Object, Type) (Type *)safe_cast_helper(Object, [Type class])
-static inline id safe_cast_helper(id x, Class c) {
-    return [x isKindOfClass:c] ? x : nil;
-}
-#endif
-
 @interface HFCollectionViewBindingHelper()
 @property (nonatomic, weak) UICollectionViewCell* templateCell;
 @property (nonatomic, copy) NSString * cellIdentifier;
