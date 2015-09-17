@@ -33,8 +33,8 @@ static inline id safe_cast_helper(id x, Class c) {
 @implementation HFMetaBindingHelper
 
 - (instancetype)initForSourceList:(KVOMutableArray *)source
-                    didSelectionBlock:(HFSelectionBlock)block
-                             isNested:(BOOL)isNested
+                didSelectionBlock:(HFSelectionBlock)block
+                         isNested:(BOOL)isNested
 {
     NSParameterAssert(source);
     
@@ -237,20 +237,20 @@ static inline id safe_cast_helper(id x, Class c) {
 - (void)insertItemsAtIndexPaths:(NSArray*)indexPaths
 {
     NSAssert(NO, @"abstract function");
-                // Need performBatchUpdates to avoid
-                // Fatal Exception: NSInternalInconsistencyException
-                // too many update animations on one view - limit is 31 in flight at a time
-//                [selfRef.collectionView performBatchUpdates:^{
-//                    [selfRef.collectionView insertItemsAtIndexPaths:indexPaths];
-//                } completion:nil];
+    // Need performBatchUpdates to avoid
+    // Fatal Exception: NSInternalInconsistencyException
+    // too many update animations on one view - limit is 31 in flight at a time
+    //                [selfRef.collectionView performBatchUpdates:^{
+    //                    [selfRef.collectionView insertItemsAtIndexPaths:indexPaths];
+    //                } completion:nil];
 }
 
 - (void)deleteItemsAtIndexPaths:(NSArray*)indexPaths
 {
     NSAssert(NO, @"abstract function");
-//                [selfRef.collectionView performBatchUpdates:^{
-//                    [selfRef.collectionView deleteItemsAtIndexPaths:indexPaths];
-//                } completion:nil];
+    //                [selfRef.collectionView performBatchUpdates:^{
+    //                    [selfRef.collectionView deleteItemsAtIndexPaths:indexPaths];
+    //                } completion:nil];
     
 }
 
