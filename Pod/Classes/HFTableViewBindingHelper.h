@@ -23,8 +23,14 @@
                            isNested:(BOOL)isNested;
 
 + (instancetype)bindingForTableView:(UITableView *)tableView
-                              sourceList:(KVOMutableArray*)source
-                       didSelectionBlock:(HFSelectionBlock)block
-                     cellReuseIdentifier:(NSString *)reuseIdentifier
+                         sourceList:(KVOMutableArray*)source
+                  didSelectionBlock:(HFSelectionBlock)block
+                cellReuseIdentifier:(NSString *)reuseIdentifier
+                           isNested:(BOOL)isNested;
+
++ (instancetype)bindingForTableView:(UITableView *)tableView
+                         sourceList:(KVOMutableArray*)source
+                  didSelectionBlock:(HFSelectionBlock)block
+                       templateCell:(UINib *)templateCellNib
                            isNested:(BOOL)isNested;
 @end

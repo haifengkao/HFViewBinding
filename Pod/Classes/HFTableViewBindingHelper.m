@@ -47,10 +47,26 @@
 }
 
 + (instancetype)bindingForTableView:(UITableView *)tableView
-                              sourceList:(KVOMutableArray*)source
-                       didSelectionBlock:(HFSelectionBlock)block
-                     cellReuseIdentifier:(NSString *)reuseIdentifier
-                                isNested:(BOOL)isNested
+                         sourceList:(KVOMutableArray*)source
+                  didSelectionBlock:(HFSelectionBlock)block
+                       templateCell:(UINib *)templateCellNib
+                           isNested:(BOOL)isNested
+{
+    // create an instance of the template cell and register with the table view
+    UITableViewCell* templateCell = [[templateCellNib instantiateWithOwner:nil options:nil] firstObject];
+    [tableView registerNib:templateCellNib forCellReuseIdentifier:templateCell.reuseIdentifier];
+    
+    tableView.rowHeight = templateCell.bounds.size.height;
+    return [[self alloc] initWithTableView:tableView sourceList:source didSelectionBlock:block cellReuseIdentifier:templateCell.reuseIdentifier isNested:isNested];
+}
+
+// use the template cell to set the row height
+
++ (instancetype)bindingForTableView:(UITableView *)tableView
+                         sourceList:(KVOMutableArray*)source
+                  didSelectionBlock:(HFSelectionBlock)block
+                cellReuseIdentifier:(NSString *)reuseIdentifier
+                           isNested:(BOOL)isNested
 {
     return [[self alloc] initWithTableView:tableView sourceList:source didSelectionBlock:block cellReuseIdentifier:reuseIdentifier isNested:isNested];
 }
