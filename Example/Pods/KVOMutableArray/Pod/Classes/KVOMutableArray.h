@@ -1,13 +1,13 @@
 #import <Foundation/Foundation.h>
 #import "NSObject+BlockObservation.h"
 
-@interface KVOMutableArray : NSMutableArray<NSFastEnumeration, NSMutableCopying, NSCoding, NSCopying>
+@interface KVOMutableArray<ObjectType> : NSMutableArray<NSFastEnumeration, NSMutableCopying, NSCoding, NSCopying>
 
-- (NSMutableArray*)arr;
+- (NSMutableArray<ObjectType>*)arr;
 
 - (instancetype)init;
-- (instancetype)initWithMutableArray:(NSMutableArray*)array NS_DESIGNATED_INITIALIZER;
-- (BOOL)isEqualToArray:(KVOMutableArray*)array;
+- (instancetype)initWithMutableArray:(NSMutableArray<ObjectType>*)array NS_DESIGNATED_INITIALIZER;
+- (BOOL)isEqualToArray:(KVOMutableArray<ObjectType>*)array;
 - (AMBlockToken*)addObserverWithTask:(AMBlockTask)task;
 
 // Warning!! [NSKeyedUnarchiver unarchiveObject] will return NSMutableArray

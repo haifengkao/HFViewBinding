@@ -2,7 +2,7 @@
 //  KVOMutableArrayObserver.h
 //  Pods
 //
-//  Created by Lono on 2015/7/20.
+//  Created by Hai Feng Kao on 2015/7/20.
 //
 //
 
@@ -12,6 +12,7 @@
 @interface KVOMutableArrayObserver : NSObject
 @property (nonatomic, strong) NSMutableArray* arr;
 
+- (instancetype)init;
 - (instancetype)initWithMutableArray:(NSMutableArray*)array NS_DESIGNATED_INITIALIZER;
 - (AMBlockToken*)addObserverWithTask:(AMBlockTask)task;
 
