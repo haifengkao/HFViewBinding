@@ -1,9 +1,9 @@
 # HFViewBinding
 
-[![CI Status](http://img.shields.io/travis/Hai Feng Kao/HFTableCollectionBindingHelper.svg?style=flat)](https://travis-ci.org/Hai Feng Kao/HFTableCollectionBindingHelper)
-[![Version](https://img.shields.io/cocoapods/v/HFTableCollectionBindingHelper.svg?style=flat)](http://cocoapods.org/pods/HFTableCollectionBindingHelper)
-[![License](https://img.shields.io/cocoapods/l/HFTableCollectionBindingHelper.svg?style=flat)](http://cocoapods.org/pods/HFTableCollectionBindingHelper)
-[![Platform](https://img.shields.io/cocoapods/p/HFTableCollectionBindingHelper.svg?style=flat)](http://cocoapods.org/pods/HFTableCollectionBindingHelper)
+[![CI Status](http://img.shields.io/travis/Hai Feng Kao/HFViewBinding.svg?style=flat)](https://travis-ci.org/Hai Feng Kao/HFViewBinding)
+[![Version](https://img.shields.io/cocoapods/v/HFViewBinding.svg?style=flat)](http://cocoapods.org/pods/HFViewBinding)
+[![License](https://img.shields.io/cocoapods/l/HFViewBinding.svg?style=flat)](http://cocoapods.org/pods/HFViewBinding)
+[![Platform](https://img.shields.io/cocoapods/p/HFViewBinding.svg?style=flat)](http://cocoapods.org/pods/HFViewBinding)
 
 
 UITableView and UICollectionView Binding 
@@ -18,7 +18,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "HFViewBinding"
 ```
-
 
 ## Usage
 ```objc
