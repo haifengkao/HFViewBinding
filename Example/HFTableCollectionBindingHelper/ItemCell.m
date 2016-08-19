@@ -7,9 +7,9 @@
 //
 
 #import "ItemCell.h"
-#import "HFBindingViewDelegate.h"
+#import "HFBindingDelegate.h"
 
-@interface ItemCell()<HFBindingViewDelegate>
+@interface ItemCell()<HFBindingDelegate>
 
 @end
 @implementation ItemCell

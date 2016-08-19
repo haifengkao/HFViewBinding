@@ -1,4 +1,4 @@
-# HFTableCollectionBindingHelper
+# HFViewBinding
 
 [![CI Status](http://img.shields.io/travis/Hai Feng Kao/HFTableCollectionBindingHelper.svg?style=flat)](https://travis-ci.org/Hai Feng Kao/HFTableCollectionBindingHelper)
 [![Version](https://img.shields.io/cocoapods/v/HFTableCollectionBindingHelper.svg?style=flat)](http://cocoapods.org/pods/HFTableCollectionBindingHelper)
@@ -6,19 +6,27 @@
 [![Platform](https://img.shields.io/cocoapods/p/HFTableCollectionBindingHelper.svg?style=flat)](http://cocoapods.org/pods/HFTableCollectionBindingHelper)
 
 
-UITableView and UICollectionView Binding Helper
+UITableView and UICollectionView Binding 
 
 This project privides some helper functions to bind a mutable array to table views or colllection views. It supports single or multiple sections.
 
-Note: collection view support is still WIP.
+## Installation
+
+HFViewBinding is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "HFViewBinding"
+```
+
 
 ## Usage
 ```objc
 KVOMutableArray* someData = [[KVOMutableArray alloc] 
                         initWithMutableArray:[@[@"cell 1", @"cell 2"] mutableCopy]];
 
-HFTableViewBindingHelper* bindingHelper = 
-[HFTableViewBindingHelper bindingForTableView:self.tableView 
+HFTableViewBinding* bindingHelper = 
+[HFTableViewBinding bindingForTableView:self.tableView 
                                    sourceList:someData 
                             didSelectionBlock:^(id model) 
                                              { NSLog(@"clicked on %@", model); } 
@@ -30,7 +38,7 @@ bindingHelper.dataSource = self;
 ```
 You have to use `KVOMutableArray` as the mutable array class to inform the observers about the mutation event. See [KVOMutableArray](https://github.com/haifengkao/KVOMutableArray) for more details.
 
-The cell must implement `HFBindingViewDelegate` protocol.
+The cell must implement `HFBindingDelegate` protocol.
 
 The `delegate` and `dataSource` settings are optional. If they are set, all delegate methods which are not handled by bindingHelper will be sent to `self` in the above exmaple.
 
@@ -43,23 +51,14 @@ KVOMutableArray* secondRow = [[KVOMutableArray alloc]
                         initWithMutableArray:[@[@"cell 1", @"cell 2"] mutableCopy]];
 KVOMutableArray* someData = [[KVOMutableArray alloc] initWithMutableArray:[@[firstRow, secondRow] mutableCopy]];
 
-HFTableViewBindingHelper* bindingHelper = 
-[HFTableViewBindingHelper bindingForTableView:self.tableView 
+HFTableViewBinding* bindingHelper = 
+[HFTableViewBinding bindingForTableView:self.tableView 
                                    sourceList:someData 
                             didSelectionBlock:^(id model) 
                                              { NSLog(@"clicked on %@", model); } 
                         templateCellClassName:@"YourCellClass"
                                      isNested:YES];
 ```
-## Installation
-
-HFTableCollectionBindingHelper is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "HFTableCollectionBindingHelper"
-```
-
 ## Motivation
 
 MVVM (Model-View-ViewModel) is a popular replacement of original MVC architecture.
@@ -86,4 +85,4 @@ Forks, patches and other feedback are welcome.
 
 ## License
 
-HFTableCollectionBindingHelper is available under the MIT license. See the LICENSE file for more info.
+HFViewBinding is available under the MIT license. See the LICENSE file for more info.

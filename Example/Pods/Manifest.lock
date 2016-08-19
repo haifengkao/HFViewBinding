@@ -1,5 +1,5 @@
 PODS:
-  - HFTableCollectionBindingHelper (0.8.0):
+  - HFViewBinding (2.0.0):
     - KVOMutableArray
     - WZProtocolInterceptor
   - KVOMutableArray (1.6.0):
@@ -8,17 +8,17 @@ PODS:
   - WZProtocolInterceptor (0.1.0)
 
 DEPENDENCIES:
-  - HFTableCollectionBindingHelper (from `../`)
+  - HFViewBinding (from `../`)
 
 EXTERNAL SOURCES:
-  HFTableCollectionBindingHelper:
+  HFViewBinding:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HFTableCollectionBindingHelper: 4becc047bd7d7f5835c49991c1bf48e21d49803f
+  HFViewBinding: f3cf8fbfcadf092504f6e76246b2412c97c9a7c0
   KVOMutableArray: 61732766a6b51a40646eb92d6c0f61557f0f035f
   WZProtocolInterceptor: 56c395e4b3323140421eba99546be362aabc041e
 
-PODFILE CHECKSUM: e61d58b4310d08ced2de22448a1cb3f9929e22ed
+PODFILE CHECKSUM: 876d3e6b6e141b5e4aff9ccae12196a2cba07dfb
 
 COCOAPODS: 1.0.1

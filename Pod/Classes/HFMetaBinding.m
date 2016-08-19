@@ -1,13 +1,13 @@
 //
-//  HFMetaBindingHelper.m
+//  HFMetaBinding.m
 //  SpicyGymLog
 //
 //  Created by Hai Feng Kao on 2015/5/30.
 //  Copyright (c) 2015年 CocoaSpice. All rights reserved.
 //
 
-#import "HFMetaBindingHelper.h"
-#import "HFBindingViewDelegate.h"
+#import "HFMetaBinding.h"
+#import "HFBindingDelegate.h"
 #import "KVOMutableArray.h"
 
 #if !defined(SAFE_CAST)
@@ -25,13 +25,13 @@ static inline id safe_cast_helper(id x, Class c) {
 
 @end
 
-@interface HFMetaBindingHelper()
+@interface HFMetaBinding()
 @property (nonatomic, strong) AMBlockToken* primaryToken;
 @property (nonatomic, strong) NSMutableArray* secondaryTokens;
 @property (nonatomic, assign) BOOL isNested;
 @end
 
-@implementation HFMetaBindingHelper
+@implementation HFMetaBinding
 
 - (instancetype)init
 {
@@ -208,16 +208,16 @@ static inline id safe_cast_helper(id x, Class c) {
     }
 }
 
-- (id<HFBindingViewDelegate>)cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (id<HFBindingDelegate>)cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     return [self dequeueCellAndBindWithIndexPath:indexPath];
 }
 
-- (id<HFBindingViewDelegate>)dequeueCellAndBindWithIndexPath:(NSIndexPath *)indexPath {
-    id<HFBindingViewDelegate> cell = [self dequeueReusableCellWithIndexPath:indexPath];
+- (id<HFBindingDelegate>)dequeueCellAndBindWithIndexPath:(NSIndexPath *)indexPath {
+    id<HFBindingDelegate> cell = [self dequeueReusableCellWithIndexPath:indexPath];
     
     id item = [self itemAtIndexPath:indexPath];
     if (item && cell) {
-        if ([cell conformsToProtocol:@protocol(HFBindingViewDelegate)]) {
+        if ([cell conformsToProtocol:@protocol(HFBindingDelegate)]) {
             [cell bindModel:item];
         } else if ([item isKindOfClass:[NSDictionary class]]){
             [self defaultBindingToCell:cell model:item];
@@ -266,7 +266,7 @@ static inline id safe_cast_helper(id x, Class c) {
     NSAssert(NO, @"abstract function");
 }
             
-- (id<HFBindingViewDelegate>)dequeueReusableCellWithIndexPath:(NSIndexPath*)indexPath
+- (id<HFBindingDelegate>)dequeueReusableCellWithIndexPath:(NSIndexPath*)indexPath
 {
     NSAssert(NO, @"abstract function");
     return nil;

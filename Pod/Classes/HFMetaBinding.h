@@ -1,5 +1,5 @@
 //
-//  HFMetaBindingHelper.h
+//  HFMetaBinding.h
 //  SpicyGymLog
 //
 //  Created by Hai Feng Kao on 2015/5/30.
@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @class KVOMutableArray;
-@protocol HFBindingViewDelegate;
+@protocol HFBindingDelegate;
 
 typedef void (^HFSelectionBlock)(id model);
 
-@interface HFMetaBindingHelper : NSObject
+@interface HFMetaBinding : NSObject
 
 @property (nonatomic, strong) KVOMutableArray* data;
 @property (nonatomic, copy) HFSelectionBlock selectionBlock;
@@ -23,7 +23,7 @@ typedef void (^HFSelectionBlock)(id model);
                          isNested:(BOOL)isNested NS_DESIGNATED_INITIALIZER;
 - (NSInteger)numberOfSections;
 - (NSInteger)numberOfItemsInSection:(NSInteger)section;
-- (id<HFBindingViewDelegate>)cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (id<HFBindingDelegate>)cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
 - (BOOL)isNested;
 #pragma mark - protected
@@ -31,7 +31,7 @@ typedef void (^HFSelectionBlock)(id model);
 - (void)insertItemsAtIndexPaths:(NSArray*)indexPaths;
 - (void)deleteItemsAtIndexPaths:(NSArray*)indexPaths;
 - (void)reloadItemsAtIndexPaths:(NSArray*)indexPaths;
-- (id<HFBindingViewDelegate>)dequeueReusableCellWithIndexPath:(NSIndexPath*)indexPath;
+- (id<HFBindingDelegate>)dequeueReusableCellWithIndexPath:(NSIndexPath*)indexPath;
 - (void)insertSections:(NSIndexSet*)indexes;
 - (void)deleteSections:(NSIndexSet*)indexes;
 - (void)reloadSections:(NSIndexSet*)indexes;

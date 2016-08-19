@@ -7,114 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08577615A553BD8E06F50EF18EFF0278 /* KVOMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FD050DA68F19B409C224A247BF33A692 /* KVOMutableArray.m */; };
-		13BD296319B119A359AE5BDC5E0B4794 /* KVOMutableArray-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51FD8F77441A031C39BEBB893A13F011 /* KVOMutableArray-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16D19285ACF54A0655481073A0F5BE52 /* HFMetaBindingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4B04ED5B05F8CB10C0376D2C927B98 /* HFMetaBindingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29137D05B1C453BCBC615BDE89A6ED6A /* Pods-HFTableCollectionBindingHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C0A0367609740F5C10C147B5D8BCB6 /* Pods-HFTableCollectionBindingHelper_Tests-dummy.m */; };
-		2ABB6E431BB25B9CAAAAEF45A47CC07B /* HFTableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE20850EA387F17EE9DC6A8C7CD08A /* HFTableViewBindingHelper.m */; };
-		345DACA98A9102D357DD80E596F0D4F5 /* HFMetaBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 877669A325CB0788B7273E32C216F183 /* HFMetaBindingHelper.m */; };
-		3CC8475EAB72394C3312C0DAE4FA5639 /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E77AC9E20A9521B953EDA735928D9 /* NSObject+BlockObservation.m */; };
-		416CA55F4066AB7197225E3BB92E7C41 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D71B2C027500AA5B43AA0336ECBFC32 /* ReplaceMe.m */; };
-		45D4A08FFC3BB3190F4104EE610E78FD /* HFCollectionViewBindingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0092EB5431610814A7AEC65AAED26FB8 /* HFCollectionViewBindingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49C6FE3EC56DA844EAFB9E4C0F76EBF1 /* Pods-HFTableCollectionBindingHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA577D553B686C7EDC013198D8551 /* Pods-HFTableCollectionBindingHelper_Example-dummy.m */; };
-		523137872167CA0D5D4D1789572444E5 /* WZProtocolInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6590B6338F468134AFD5F353F3A871 /* WZProtocolInterceptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FD45CE5D5716E71B9E127209EE6BFCB /* HFTableViewBindingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D82D7DB2645609188F3EC668CCBA4D /* HFTableViewBindingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71A7723556B319DB9CDE534D3189A51D /* WZProtocolInterceptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F65675E8C9302C6EAACC0E2F205716F /* WZProtocolInterceptor.framework */; };
-		75B63637870B42B01523653148C9FF59 /* Pods-HFTableCollectionBindingHelper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1FE3BE5D9920DB5065A4959D8BD5D9B /* Pods-HFTableCollectionBindingHelper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77115D3A3EC6E48869F1854F94A5D6B3 /* KVOMutableArrayObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 216A7CF269FAE9239D0A234736892F6A /* KVOMutableArrayObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F273885D72A6FF3563676F562BBF100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
-		8108DFA37CB72554D47C49F9B8359F75 /* KVOMutableArray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A5222E5D16C0BCBCD6CFFA253C5A5F /* KVOMutableArray.framework */; };
-		895D8635AC613319F8DB60CE56DE4AF0 /* HFTableCollectionBindingHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C36443773867B9F8024BE43283C74 /* HFTableCollectionBindingHelper-dummy.m */; };
-		98A81A55732D1504446DECE3AAC979DC /* WZProtocolInterceptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C239B5AB6A8921C47A18E372F0AEEC /* WZProtocolInterceptor-dummy.m */; };
-		9D6146EEBC67514D610FC329033C04FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
-		9E1666632255BF1140262E37BD5ADCB7 /* KVOMutableArray-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFC43AB6F0FED625434F92196D0BFF /* KVOMutableArray-dummy.m */; };
-		A8A4EEB8D89BBDF301BF4F809751DE85 /* KVOMutableArrayObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 49535A6FA03C81940A7F31CF9131B08A /* KVOMutableArrayObserver.m */; };
-		ABC0B9A3549D217AABA026167B36D51C /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B63B2D9C18BD8D07B6490B7C2212578 /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACB227E52C5E4F27930229B1C28AD3CA /* HFCollectionViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E4221197697092AF8763581B5226317A /* HFCollectionViewBindingHelper.m */; };
-		B71BE141DBDEC08FE7EEAF5FE6BAAA6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
-		D03244991D88CED6CDE0DCF0127BD0D2 /* Pods-HFTableCollectionBindingHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18581BEEFE3B73CD5CF9C73FAFFC7BC1 /* Pods-HFTableCollectionBindingHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE60DD3FAC39F293F536FC67C42CCAA8 /* KVOMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = F955551E5991043FE804E37C6EF3591A /* KVOMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6E74B3375F4FE70A5BA917EFD71D556 /* WZProtocolInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064F6EB92ED29DB7BFA6C5D94F4A55 /* WZProtocolInterceptor.m */; };
-		E9872184B644AD26D9A6805CE13E89E9 /* HFTableCollectionBindingHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2468A4DAB90F674B57F1398E50434AB3 /* HFTableCollectionBindingHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F448D403E0A649F083AA0B5B04182C00 /* HFBindingViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F47FA5F673AD8A5C288A8322CB2FFD /* HFBindingViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5345FE4EC8E6D3B6AC880F568A56E93 /* WZProtocolInterceptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D46CF347BCC578AF16A87A3A3175E795 /* WZProtocolInterceptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD6D457210F8367F6EA815D57C1E1D8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
-		FF03E2AAB3F119777990F9366C708B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
+		17BC705645BF14A77C3B6329E5FF4400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
+		1A3E81CDEF75EF60EEAAE7479D8289EB /* WZProtocolInterceptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D46CF347BCC578AF16A87A3A3175E795 /* WZProtocolInterceptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204747593708BD308699A1EDF5774B17 /* HFMetaBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 70DBD9CA9CDAD76C0D68E162C6086DA9 /* HFMetaBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		227F926A00D0E570A540AB3A254ECE0D /* Pods-HFTableCollectionBindingHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA577D553B686C7EDC013198D8551 /* Pods-HFTableCollectionBindingHelper_Example-dummy.m */; };
+		29109203A564B9266068EFB83F28C413 /* HFTableViewBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = AB937C479578FC80A5BF1E0287046C3E /* HFTableViewBinding.m */; };
+		2E01C17FAC3EB4C2C6F2AB7E788B2E4C /* Pods-HFTableCollectionBindingHelper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1FE3BE5D9920DB5065A4959D8BD5D9B /* Pods-HFTableCollectionBindingHelper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38060DFA303E20FD0CC080CDEC010D5E /* WZProtocolInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064F6EB92ED29DB7BFA6C5D94F4A55 /* WZProtocolInterceptor.m */; };
+		3E9C6C2169D206F2451BA9C17E9FBC7A /* KVOMutableArrayObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 49535A6FA03C81940A7F31CF9131B08A /* KVOMutableArrayObserver.m */; };
+		41EEB09DF8A36F6AB53FE179C20D434B /* KVOMutableArray-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51FD8F77441A031C39BEBB893A13F011 /* KVOMutableArray-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D8E5998A1CC4532D7DA04C9445FB4F5 /* WZProtocolInterceptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C239B5AB6A8921C47A18E372F0AEEC /* WZProtocolInterceptor-dummy.m */; };
+		52FFB77E2C69630E2D85E9C49A336EE5 /* HFViewBinding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C4400086E06FCC3C001780E98676A1 /* HFViewBinding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5774EE3F61378A9A9DA93407FFBB2547 /* KVOMutableArray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A5222E5D16C0BCBCD6CFFA253C5A5F /* KVOMutableArray.framework */; };
+		68582ACD8583289E51E3F4D2345D4D9C /* KVOMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FD050DA68F19B409C224A247BF33A692 /* KVOMutableArray.m */; };
+		69D3D545F5E7C8F6BBE75F4421DE494D /* KVOMutableArray-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFC43AB6F0FED625434F92196D0BFF /* KVOMutableArray-dummy.m */; };
+		6B89857CAAE486A02C698982E3137407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
+		6E9B366866ACD1FEA1E9DFD9CCEAEF05 /* Pods-HFTableCollectionBindingHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C0A0367609740F5C10C147B5D8BCB6 /* Pods-HFTableCollectionBindingHelper_Tests-dummy.m */; };
+		75E39A5B73D252AF74B894007E3CA10E /* HFViewBinding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8770B464BEE5F91C0E90A24AD001A810 /* HFViewBinding-dummy.m */; };
+		8199CF9729F1732F9D90E6BF6BEF42FB /* KVOMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = F955551E5991043FE804E37C6EF3591A /* KVOMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82A14249F7F77FB5E3017C4B72A08FEA /* KVOMutableArrayObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 216A7CF269FAE9239D0A234736892F6A /* KVOMutableArrayObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84937C863EF36B489BE77DBB9B2ADD57 /* HFBindingDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F3CBB36FF5F271119D2D520DB0AD30 /* HFBindingDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9762C9ABC9D801929944D716302E7124 /* HFTableViewBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A92A8385F911980CEA385CC2D5C93B7 /* HFTableViewBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D4CB34AF19DA9E92B0171841F062335 /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B63B2D9C18BD8D07B6490B7C2212578 /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D79868BFAAE76315145A41E71A36157 /* HFCollectionViewBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = F05625085DDDB3F2D8B66D0442EED073 /* HFCollectionViewBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB6B009E0123DA5432F73313660A9030 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D71B2C027500AA5B43AA0336ECBFC32 /* ReplaceMe.m */; };
+		C9C52CEBEA613DA2B44DE67F81801118 /* WZProtocolInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6590B6338F468134AFD5F353F3A871 /* WZProtocolInterceptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA51325C2C52C806EE09756D1914400C /* HFCollectionViewBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = AF676F25F28188EB3F5B31A8A8AFE740 /* HFCollectionViewBinding.m */; };
+		CC40EAB5A17EC82FD9B706AA69EA0CDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
+		E13299101F6AC47B6C93526C5DA1CF4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
+		E2DAA042BF2ABEDF6CB55F22C8338535 /* Pods-HFTableCollectionBindingHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18581BEEFE3B73CD5CF9C73FAFFC7BC1 /* Pods-HFTableCollectionBindingHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE6C84BD78257CD6BF4491B993F9E8A /* HFMetaBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8B02207D1B6070070D3793066B9E4 /* HFMetaBinding.m */; };
+		F587F394BA4BF2B19F98FBD5C669E3B8 /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E77AC9E20A9521B953EDA735928D9 /* NSObject+BlockObservation.m */; };
+		F9DB5EBBB23F7E6A75747DC850F1FF20 /* WZProtocolInterceptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F65675E8C9302C6EAACC0E2F205716F /* WZProtocolInterceptor.framework */; };
+		FB1624D8CC920B7FCC0EE7CAB360D1D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		754689546BA5859E1018739662ACD13B /* PBXContainerItemProxy */ = {
+		6B3A0C9BC011C86F638EEA6BA183251F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2BFDD992C4350D1A8BF6F6ACA793495A;
+			remoteGlobalIDString = 6FA9E8162858F4798D3AC8E7657A9646;
 			remoteInfo = KVOMutableArray;
 		};
-		792EAF721318A95846B4B54E41539364 /* PBXContainerItemProxy */ = {
+		70207881611C5BECA8E2D0727328D7C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2BFDD992C4350D1A8BF6F6ACA793495A;
+			remoteGlobalIDString = 6FA9E8162858F4798D3AC8E7657A9646;
 			remoteInfo = KVOMutableArray;
 		};
-		95AE9B97107773249B072224764FCFBA /* PBXContainerItemProxy */ = {
+		8A4C43A227564FF4026C02728E9C7638 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2BFDD992C4350D1A8BF6F6ACA793495A;
+			remoteGlobalIDString = 300511D04DFAA4CE643654D28510D807;
+			remoteInfo = HFViewBinding;
+		};
+		8FFF7864255F99615FF54B2CB18F5D1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85BE0D28CA8EAB7EA4F090B40D509F7F;
+			remoteInfo = WZProtocolInterceptor;
+		};
+		907DD13989D12C11F6E566D9AE132EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85BE0D28CA8EAB7EA4F090B40D509F7F;
+			remoteInfo = WZProtocolInterceptor;
+		};
+		E53F97530C3D519CBCD2C492006157BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 300511D04DFAA4CE643654D28510D807;
+			remoteInfo = HFViewBinding;
+		};
+		F48EF3AE077BC0D959AEF95E14323FE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85BE0D28CA8EAB7EA4F090B40D509F7F;
+			remoteInfo = WZProtocolInterceptor;
+		};
+		F9B90BD0F7BA49076AA5BDFF109F988C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FA9E8162858F4798D3AC8E7657A9646;
 			remoteInfo = KVOMutableArray;
-		};
-		9987EA4790FCB09266820CDA6015FDCD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 90DC0279C6F8609CED5E5590FE60EB18;
-			remoteInfo = HFTableCollectionBindingHelper;
-		};
-		A1C13B6441AD574B0B47EE311B82B9D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C72A6F557B8952E3E0860C7ABEF9861;
-			remoteInfo = WZProtocolInterceptor;
-		};
-		A5E428FE32B24526CF9849C4EF5B29BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 90DC0279C6F8609CED5E5590FE60EB18;
-			remoteInfo = HFTableCollectionBindingHelper;
-		};
-		B4E0105B28E64E1AB91027073E593EB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C72A6F557B8952E3E0860C7ABEF9861;
-			remoteInfo = WZProtocolInterceptor;
-		};
-		DB18740D57680236BEB9E290E7F25EF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C72A6F557B8952E3E0860C7ABEF9861;
-			remoteInfo = WZProtocolInterceptor;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0092EB5431610814A7AEC65AAED26FB8 /* HFCollectionViewBindingHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFCollectionViewBindingHelper.h; sourceTree = "<group>"; };
 		05BEA577D553B686C7EDC013198D8551 /* Pods-HFTableCollectionBindingHelper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HFTableCollectionBindingHelper_Example-dummy.m"; sourceTree = "<group>"; };
 		10514681FFBA4E6DA47415212E7B9E6B /* Pods-HFTableCollectionBindingHelper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HFTableCollectionBindingHelper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		15D82D7DB2645609188F3EC668CCBA4D /* HFTableViewBindingHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFTableViewBindingHelper.h; sourceTree = "<group>"; };
 		18581BEEFE3B73CD5CF9C73FAFFC7BC1 /* Pods-HFTableCollectionBindingHelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HFTableCollectionBindingHelper_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1CE0B6C981DFB97C69E11D6D04571814 /* HFViewBinding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HFViewBinding.modulemap; sourceTree = "<group>"; };
 		1D197938C2D9777A241335974BD41275 /* KVOMutableArray-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOMutableArray-prefix.pch"; sourceTree = "<group>"; };
 		1D71B2C027500AA5B43AA0336ECBFC32 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Pod/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		1E4A755A361E9622D4ED24BF367742E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FCCC4CDAE2FC018B2AC0E9EFCE470ED /* Pods-HFTableCollectionBindingHelper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HFTableCollectionBindingHelper_Example.modulemap"; sourceTree = "<group>"; };
 		1FE8A0E95A3E155096333B448A739421 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		216A7CF269FAE9239D0A234736892F6A /* KVOMutableArrayObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVOMutableArrayObserver.h; path = Pod/Classes/KVOMutableArrayObserver.h; sourceTree = "<group>"; };
 		23B30463CA5D7228F6310E1B9B0DA695 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFTableCollectionBindingHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2468A4DAB90F674B57F1398E50434AB3 /* HFTableCollectionBindingHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFTableCollectionBindingHelper-umbrella.h"; sourceTree = "<group>"; };
 		29C239B5AB6A8921C47A18E372F0AEEC /* WZProtocolInterceptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZProtocolInterceptor-dummy.m"; sourceTree = "<group>"; };
 		2A8C98D8391C95633AB471DD524E759D /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2EDFC43AB6F0FED625434F92196D0BFF /* KVOMutableArray-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVOMutableArray-dummy.m"; sourceTree = "<group>"; };
@@ -122,91 +119,94 @@
 		32A5222E5D16C0BCBCD6CFFA253C5A5F /* KVOMutableArray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOMutableArray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		371282D5C6EF91635997933D1E506F2C /* Pods-HFTableCollectionBindingHelper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HFTableCollectionBindingHelper_Tests.modulemap"; sourceTree = "<group>"; };
 		3BC9F026C1FD525857836D582CE6790B /* Pods-HFTableCollectionBindingHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HFTableCollectionBindingHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3DCB81BADA3970EE581A387D3F06DD6D /* HFTableCollectionBindingHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFTableCollectionBindingHelper-prefix.pch"; sourceTree = "<group>"; };
 		3FCA6B0057B9C63867D3EF082006C196 /* Pods-HFTableCollectionBindingHelper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HFTableCollectionBindingHelper_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		4411CBBA95AA55A5B44FEFFC86D7CF3E /* HFTableCollectionBindingHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HFTableCollectionBindingHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		461F85BBDCBA7C2A6CBC5F64CA3DA308 /* KVOMutableArray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOMutableArray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49535A6FA03C81940A7F31CF9131B08A /* KVOMutableArrayObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVOMutableArrayObserver.m; path = Pod/Classes/KVOMutableArrayObserver.m; sourceTree = "<group>"; };
 		4F65675E8C9302C6EAACC0E2F205716F /* WZProtocolInterceptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WZProtocolInterceptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FD8F77441A031C39BEBB893A13F011 /* KVOMutableArray-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOMutableArray-umbrella.h"; sourceTree = "<group>"; };
+		55F3CBB36FF5F271119D2D520DB0AD30 /* HFBindingDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFBindingDelegate.h; sourceTree = "<group>"; };
+		5A92A8385F911980CEA385CC2D5C93B7 /* HFTableViewBinding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFTableViewBinding.h; sourceTree = "<group>"; };
 		5B6EAD8586FEAD8F04F3BB6F9131DD63 /* WZProtocolInterceptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZProtocolInterceptor.xcconfig; sourceTree = "<group>"; };
 		61B7F58856EF0385D641976A356D6900 /* WZProtocolInterceptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WZProtocolInterceptor.modulemap; sourceTree = "<group>"; };
 		667D1AC7BCD4AE16A2FB69E410583386 /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B08DCAB645AB3ABB31365C8F2052B1A /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6D0F3BA37F14E8635207A5B60E6DEF00 /* HFTableCollectionBindingHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HFTableCollectionBindingHelper.modulemap; sourceTree = "<group>"; };
 		6F5298DE482504A6E07D51CFDF09288E /* Pods-HFTableCollectionBindingHelper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HFTableCollectionBindingHelper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		73894F7B766AE6D6981915F39811DCE1 /* HFTableCollectionBindingHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HFTableCollectionBindingHelper.xcconfig; sourceTree = "<group>"; };
+		70DBD9CA9CDAD76C0D68E162C6086DA9 /* HFMetaBinding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFMetaBinding.h; sourceTree = "<group>"; };
 		79588058F0999404606F5BC31199D7B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F6A6601AE24D68199A42D9EA89AD341 /* Pods_HFTableCollectionBindingHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTableCollectionBindingHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		877669A325CB0788B7273E32C216F183 /* HFMetaBindingHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFMetaBindingHelper.m; sourceTree = "<group>"; };
+		827D7DEAE57725CC7099023004B300F8 /* Pods_HFTableCollectionBindingHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTableCollectionBindingHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E1EAD814BC8AAB13B543ADF101866B /* HFViewBinding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HFViewBinding.xcconfig; sourceTree = "<group>"; };
+		86C4400086E06FCC3C001780E98676A1 /* HFViewBinding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFViewBinding-umbrella.h"; sourceTree = "<group>"; };
+		8770B464BEE5F91C0E90A24AD001A810 /* HFViewBinding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HFViewBinding-dummy.m"; sourceTree = "<group>"; };
 		8B63B2D9C18BD8D07B6490B7C2212578 /* NSObject+BlockObservation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BlockObservation.h"; path = "Pod/Classes/NSObject+BlockObservation.h"; sourceTree = "<group>"; };
+		8FCAC7D57BD7D5BDA36496D51E0C1CDC /* HFViewBinding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFViewBinding-prefix.pch"; sourceTree = "<group>"; };
 		938751A57250BEDD261392B6D22FE4CF /* Pods-HFTableCollectionBindingHelper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HFTableCollectionBindingHelper_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99E788B96FC9111C03600A3D7FD37684 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9BA9C43FD64F05CF8BBAD3C0DD596C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A14C36443773867B9F8024BE43283C74 /* HFTableCollectionBindingHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HFTableCollectionBindingHelper-dummy.m"; sourceTree = "<group>"; };
+		A1AADF725B7A673AF29513D3988200C9 /* HFViewBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HFViewBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BC0FE6EED91F22BAB8AE0F4822C195 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B07A98C6D3590EC88F6D61E1CF6D61C4 /* KVOMutableArray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOMutableArray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB937C479578FC80A5BF1E0287046C3E /* HFTableViewBinding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFTableViewBinding.m; sourceTree = "<group>"; };
+		ADBA72DC8C4C6517FE04F1209B9D51B5 /* WZProtocolInterceptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WZProtocolInterceptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF676F25F28188EB3F5B31A8A8AFE740 /* HFCollectionViewBinding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFCollectionViewBinding.m; sourceTree = "<group>"; };
 		B1C0A0367609740F5C10C147B5D8BCB6 /* Pods-HFTableCollectionBindingHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HFTableCollectionBindingHelper_Tests-dummy.m"; sourceTree = "<group>"; };
 		BB064F6EB92ED29DB7BFA6C5D94F4A55 /* WZProtocolInterceptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WZProtocolInterceptor.m; path = Pod/Classes/WZProtocolInterceptor.m; sourceTree = "<group>"; };
 		BBF2CB93EEA4969882BBF51F81DBF6C0 /* Pods-HFTableCollectionBindingHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HFTableCollectionBindingHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C1A3353EEAEF701A048D6435D6A0BC64 /* KVOMutableArray.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOMutableArray.xcconfig; sourceTree = "<group>"; };
 		C51B104A68DF3D27A1925AB84D78FCDA /* KVOMutableArray.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KVOMutableArray.modulemap; sourceTree = "<group>"; };
-		C6BE20850EA387F17EE9DC6A8C7CD08A /* HFTableViewBindingHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFTableViewBindingHelper.m; sourceTree = "<group>"; };
-		CC561C0475486197D2DAB38DD668DE39 /* WZProtocolInterceptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WZProtocolInterceptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46CF347BCC578AF16A87A3A3175E795 /* WZProtocolInterceptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZProtocolInterceptor-umbrella.h"; sourceTree = "<group>"; };
-		D7F47FA5F673AD8A5C288A8322CB2FFD /* HFBindingViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFBindingViewDelegate.h; sourceTree = "<group>"; };
+		D50B80853C0CC1BDC2C2E5F89CD460A9 /* Pods_HFTableCollectionBindingHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTableCollectionBindingHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C2A9FC8CF70882A10400944C689B07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAE4A739AB7AE7D224546125F548FAFB /* WZProtocolInterceptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZProtocolInterceptor-prefix.pch"; sourceTree = "<group>"; };
 		DE9E77AC9E20A9521B953EDA735928D9 /* NSObject+BlockObservation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BlockObservation.m"; path = "Pod/Classes/NSObject+BlockObservation.m"; sourceTree = "<group>"; };
-		E4221197697092AF8763581B5226317A /* HFCollectionViewBindingHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFCollectionViewBindingHelper.m; sourceTree = "<group>"; };
+		EDF8B02207D1B6070070D3793066B9E4 /* HFMetaBinding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFMetaBinding.m; sourceTree = "<group>"; };
 		EF6590B6338F468134AFD5F353F3A871 /* WZProtocolInterceptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WZProtocolInterceptor.h; path = Pod/Classes/WZProtocolInterceptor.h; sourceTree = "<group>"; };
+		F05625085DDDB3F2D8B66D0442EED073 /* HFCollectionViewBinding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFCollectionViewBinding.h; sourceTree = "<group>"; };
 		F1FE3BE5D9920DB5065A4959D8BD5D9B /* Pods-HFTableCollectionBindingHelper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HFTableCollectionBindingHelper_Example-umbrella.h"; sourceTree = "<group>"; };
 		F955551E5991043FE804E37C6EF3591A /* KVOMutableArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVOMutableArray.h; path = Pod/Classes/KVOMutableArray.h; sourceTree = "<group>"; };
 		FD050DA68F19B409C224A247BF33A692 /* KVOMutableArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVOMutableArray.m; path = Pod/Classes/KVOMutableArray.m; sourceTree = "<group>"; };
 		FE3B27E19C0A4C60DC382C9376A2D98F /* Pods-HFTableCollectionBindingHelper_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HFTableCollectionBindingHelper_Tests-resources.sh"; sourceTree = "<group>"; };
-		FF4B04ED5B05F8CB10C0376D2C927B98 /* HFMetaBindingHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFMetaBindingHelper.h; sourceTree = "<group>"; };
-		FFE4B7FD55E097BD1E61FCF0DAB0B26B /* Pods_HFTableCollectionBindingHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTableCollectionBindingHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D9235B9984D6872E0386364D3A8CAF7 /* Frameworks */ = {
+		06BD704021759AFAB142194C154C4B93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6D457210F8367F6EA815D57C1E1D8C /* Foundation.framework in Frameworks */,
+				6B89857CAAE486A02C698982E3137407 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DF4FA36D60B05B3CE779BF70BFF2CFE /* Frameworks */ = {
+		109E3CF0D868F71E505F08289414E852 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71BE141DBDEC08FE7EEAF5FE6BAAA6B /* Foundation.framework in Frameworks */,
+				17BC705645BF14A77C3B6329E5FF4400 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DE6EAF360147BA840E37C99B0759614 /* Frameworks */ = {
+		BDE00377557E346328327ED45BB40C8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6146EEBC67514D610FC329033C04FD /* Foundation.framework in Frameworks */,
-				8108DFA37CB72554D47C49F9B8359F75 /* KVOMutableArray.framework in Frameworks */,
-				71A7723556B319DB9CDE534D3189A51D /* WZProtocolInterceptor.framework in Frameworks */,
+				CC40EAB5A17EC82FD9B706AA69EA0CDD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77B8A1DC9E1B4A841470203FE38C2670 /* Frameworks */ = {
+		ECA422BA74B75B671180A331A1386D77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F273885D72A6FF3563676F562BBF100 /* Foundation.framework in Frameworks */,
+				E13299101F6AC47B6C93526C5DA1CF4C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BA81074DCD317A67952115B22483FF7 /* Frameworks */ = {
+		FA72DC5614781BB78F059478F707879C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF03E2AAB3F119777990F9366C708B30 /* Foundation.framework in Frameworks */,
+				FB1624D8CC920B7FCC0EE7CAB360D1D9 /* Foundation.framework in Frameworks */,
+				5774EE3F61378A9A9DA93407FFBB2547 /* KVOMutableArray.framework in Frameworks */,
+				F9DB5EBBB23F7E6A75747DC850F1FF20 /* WZProtocolInterceptor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,26 +231,12 @@
 			path = "Target Support Files/Pods-HFTableCollectionBindingHelper_Tests";
 			sourceTree = "<group>";
 		};
-		09CE053EE26FABE51D03CFEE9451E722 /* Products */ = {
+		102BD908CB330DE24F38824905A89774 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4411CBBA95AA55A5B44FEFFC86D7CF3E /* HFTableCollectionBindingHelper.framework */,
-				B07A98C6D3590EC88F6D61E1CF6D61C4 /* KVOMutableArray.framework */,
-				FFE4B7FD55E097BD1E61FCF0DAB0B26B /* Pods_HFTableCollectionBindingHelper_Example.framework */,
-				7F6A6601AE24D68199A42D9EA89AD341 /* Pods_HFTableCollectionBindingHelper_Tests.framework */,
-				CC561C0475486197D2DAB38DD668DE39 /* WZProtocolInterceptor.framework */,
+				D833BDACBE89C2094B97D412473C8696 /* Classes */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		13B58026AD91B88FB7FFCA6070C43E12 /* HFTableCollectionBindingHelper */ = {
-			isa = PBXGroup;
-			children = (
-				BA885E843262DE2F38557C2D08123B07 /* Pod */,
-				FD36B191ED4519FD8BF6C3A56E3590EE /* Support Files */,
-			);
-			name = HFTableCollectionBindingHelper;
-			path = ../..;
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		33AF1D38D646F2DB8E18C56351755BD3 /* WZProtocolInterceptor */ = {
@@ -262,6 +248,14 @@
 				4BA0B6E42836AACDCE21BEB4603E83D4 /* Support Files */,
 			);
 			path = WZProtocolInterceptor;
+			sourceTree = "<group>";
+		};
+		39D6060C1E54BE1AB9F5B4E161815F8D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F22EF60DA2A7F5923329BA88BA2F51A1 /* HFViewBinding */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		3E3C0F66D435EC501310F0F5F9B30ACC /* Targets Support Files */ = {
@@ -300,14 +294,6 @@
 			path = "../Target Support Files/WZProtocolInterceptor";
 			sourceTree = "<group>";
 		};
-		576D8C218C6AE2AC1D1DEFBE0905EB4E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				13B58026AD91B88FB7FFCA6070C43E12 /* HFTableCollectionBindingHelper */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		5A2166EF5658140E5D1ECD94E88BEC84 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,38 +302,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		74FD8F857A03BAE25D76ABB88DA34AFC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D7F47FA5F673AD8A5C288A8322CB2FFD /* HFBindingViewDelegate.h */,
-				0092EB5431610814A7AEC65AAED26FB8 /* HFCollectionViewBindingHelper.h */,
-				E4221197697092AF8763581B5226317A /* HFCollectionViewBindingHelper.m */,
-				FF4B04ED5B05F8CB10C0376D2C927B98 /* HFMetaBindingHelper.h */,
-				877669A325CB0788B7273E32C216F183 /* HFMetaBindingHelper.m */,
-				15D82D7DB2645609188F3EC668CCBA4D /* HFTableViewBindingHelper.h */,
-				C6BE20850EA387F17EE9DC6A8C7CD08A /* HFTableViewBindingHelper.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				576D8C218C6AE2AC1D1DEFBE0905EB4E /* Development Pods */,
+				39D6060C1E54BE1AB9F5B4E161815F8D /* Development Pods */,
 				DD00F8F369DC0509901370A5204F87D0 /* Frameworks */,
 				DC4D97CDBEEF016BAC884ACFBB61F73F /* Pods */,
-				09CE053EE26FABE51D03CFEE9451E722 /* Products */,
+				976F0770BF737065FCD36421797A9A06 /* Products */,
 				3E3C0F66D435EC501310F0F5F9B30ACC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BA885E843262DE2F38557C2D08123B07 /* Pod */ = {
+		976F0770BF737065FCD36421797A9A06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74FD8F857A03BAE25D76ABB88DA34AFC /* Classes */,
+				A1AADF725B7A673AF29513D3988200C9 /* HFViewBinding.framework */,
+				461F85BBDCBA7C2A6CBC5F64CA3DA308 /* KVOMutableArray.framework */,
+				D50B80853C0CC1BDC2C2E5F89CD460A9 /* Pods_HFTableCollectionBindingHelper_Example.framework */,
+				827D7DEAE57725CC7099023004B300F8 /* Pods_HFTableCollectionBindingHelper_Tests.framework */,
+				ADBA72DC8C4C6517FE04F1209B9D51B5 /* WZProtocolInterceptor.framework */,
 			);
-			path = Pod;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C571FECB03DEBDE99C8043A8A83D6D6C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0B6C981DFB97C69E11D6D04571814 /* HFViewBinding.modulemap */,
+				83E1EAD814BC8AAB13B543ADF101866B /* HFViewBinding.xcconfig */,
+				8770B464BEE5F91C0E90A24AD001A810 /* HFViewBinding-dummy.m */,
+				8FCAC7D57BD7D5BDA36496D51E0C1CDC /* HFViewBinding-prefix.pch */,
+				86C4400086E06FCC3C001780E98676A1 /* HFViewBinding-umbrella.h */,
+				99E788B96FC9111C03600A3D7FD37684 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HFViewBinding";
 			sourceTree = "<group>";
 		};
 		C71FA6F0B2FFA8C6D04D5A69385A2AEC /* KVOMutableArray */ = {
@@ -377,6 +367,20 @@
 			path = "Target Support Files/Pods-HFTableCollectionBindingHelper_Example";
 			sourceTree = "<group>";
 		};
+		D833BDACBE89C2094B97D412473C8696 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				55F3CBB36FF5F271119D2D520DB0AD30 /* HFBindingDelegate.h */,
+				F05625085DDDB3F2D8B66D0442EED073 /* HFCollectionViewBinding.h */,
+				AF676F25F28188EB3F5B31A8A8AFE740 /* HFCollectionViewBinding.m */,
+				70DBD9CA9CDAD76C0D68E162C6086DA9 /* HFMetaBinding.h */,
+				EDF8B02207D1B6070070D3793066B9E4 /* HFMetaBinding.m */,
+				5A92A8385F911980CEA385CC2D5C93B7 /* HFTableViewBinding.h */,
+				AB937C479578FC80A5BF1E0287046C3E /* HFTableViewBinding.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		DC4D97CDBEEF016BAC884ACFBB61F73F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +400,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F22EF60DA2A7F5923329BA88BA2F51A1 /* HFViewBinding */ = {
+			isa = PBXGroup;
+			children = (
+				102BD908CB330DE24F38824905A89774 /* Pod */,
+				C571FECB03DEBDE99C8043A8A83D6D6C /* Support Files */,
+			);
+			name = HFViewBinding;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		F9E6E1DF410CBBCA0255F7BC1D79F09C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,81 +424,106 @@
 			path = "../Target Support Files/KVOMutableArray";
 			sourceTree = "<group>";
 		};
-		FD36B191ED4519FD8BF6C3A56E3590EE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6D0F3BA37F14E8635207A5B60E6DEF00 /* HFTableCollectionBindingHelper.modulemap */,
-				73894F7B766AE6D6981915F39811DCE1 /* HFTableCollectionBindingHelper.xcconfig */,
-				A14C36443773867B9F8024BE43283C74 /* HFTableCollectionBindingHelper-dummy.m */,
-				3DCB81BADA3970EE581A387D3F06DD6D /* HFTableCollectionBindingHelper-prefix.pch */,
-				2468A4DAB90F674B57F1398E50434AB3 /* HFTableCollectionBindingHelper-umbrella.h */,
-				1E4A755A361E9622D4ED24BF367742E7 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HFTableCollectionBindingHelper";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		02770F04BFDB86C4CF13B570DD465FA8 /* Headers */ = {
+		219DDC9F084AA9E90D6F199C1A38D283 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5345FE4EC8E6D3B6AC880F568A56E93 /* WZProtocolInterceptor-umbrella.h in Headers */,
-				523137872167CA0D5D4D1789572444E5 /* WZProtocolInterceptor.h in Headers */,
+				E2DAA042BF2ABEDF6CB55F22C8338535 /* Pods-HFTableCollectionBindingHelper_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ADA285AEA38A58B7D76DE0E381FBBB9 /* Headers */ = {
+		797F47FD8381367E1ED1E267161930FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F448D403E0A649F083AA0B5B04182C00 /* HFBindingViewDelegate.h in Headers */,
-				45D4A08FFC3BB3190F4104EE610E78FD /* HFCollectionViewBindingHelper.h in Headers */,
-				16D19285ACF54A0655481073A0F5BE52 /* HFMetaBindingHelper.h in Headers */,
-				E9872184B644AD26D9A6805CE13E89E9 /* HFTableCollectionBindingHelper-umbrella.h in Headers */,
-				5FD45CE5D5716E71B9E127209EE6BFCB /* HFTableViewBindingHelper.h in Headers */,
+				1A3E81CDEF75EF60EEAAE7479D8289EB /* WZProtocolInterceptor-umbrella.h in Headers */,
+				C9C52CEBEA613DA2B44DE67F81801118 /* WZProtocolInterceptor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1658C0F722CBB01924AFF38D973EA623 /* Headers */ = {
+		9ABD134695CC2C89A1A32B01C5660394 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B63637870B42B01523653148C9FF59 /* Pods-HFTableCollectionBindingHelper_Example-umbrella.h in Headers */,
+				41EEB09DF8A36F6AB53FE179C20D434B /* KVOMutableArray-umbrella.h in Headers */,
+				8199CF9729F1732F9D90E6BF6BEF42FB /* KVOMutableArray.h in Headers */,
+				82A14249F7F77FB5E3017C4B72A08FEA /* KVOMutableArrayObserver.h in Headers */,
+				9D4CB34AF19DA9E92B0171841F062335 /* NSObject+BlockObservation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47CC0A4C6801D497DC785E946FDED4EC /* Headers */ = {
+		EE0084133D3512100914E2398AF2D88B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03244991D88CED6CDE0DCF0127BD0D2 /* Pods-HFTableCollectionBindingHelper_Tests-umbrella.h in Headers */,
+				2E01C17FAC3EB4C2C6F2AB7E788B2E4C /* Pods-HFTableCollectionBindingHelper_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72907427926D2F9FA85C33383A4D0B07 /* Headers */ = {
+		F3E41666973BBC4E63C6A2EB1F16519B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13BD296319B119A359AE5BDC5E0B4794 /* KVOMutableArray-umbrella.h in Headers */,
-				DE60DD3FAC39F293F536FC67C42CCAA8 /* KVOMutableArray.h in Headers */,
-				77115D3A3EC6E48869F1854F94A5D6B3 /* KVOMutableArrayObserver.h in Headers */,
-				ABC0B9A3549D217AABA026167B36D51C /* NSObject+BlockObservation.h in Headers */,
+				84937C863EF36B489BE77DBB9B2ADD57 /* HFBindingDelegate.h in Headers */,
+				9D79868BFAAE76315145A41E71A36157 /* HFCollectionViewBinding.h in Headers */,
+				204747593708BD308699A1EDF5774B17 /* HFMetaBinding.h in Headers */,
+				9762C9ABC9D801929944D716302E7124 /* HFTableViewBinding.h in Headers */,
+				52FFB77E2C69630E2D85E9C49A336EE5 /* HFViewBinding-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2BFDD992C4350D1A8BF6F6ACA793495A /* KVOMutableArray */ = {
+		300511D04DFAA4CE643654D28510D807 /* HFViewBinding */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC1FE6D91AFD0985E9E15395DE444C64 /* Build configuration list for PBXNativeTarget "KVOMutableArray" */;
+			buildConfigurationList = 738C0B7DDBA62E7D0416E76468E8C7BF /* Build configuration list for PBXNativeTarget "HFViewBinding" */;
 			buildPhases = (
-				4CE04426B8476F3F6B661C16125543E5 /* Sources */,
-				8BA81074DCD317A67952115B22483FF7 /* Frameworks */,
-				72907427926D2F9FA85C33383A4D0B07 /* Headers */,
+				80D88CE64D539003B2B6AAD1078A4131 /* Sources */,
+				FA72DC5614781BB78F059478F707879C /* Frameworks */,
+				F3E41666973BBC4E63C6A2EB1F16519B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80FBF623A9E9B658A00C0BB880C68AF8 /* PBXTargetDependency */,
+				54BE98A6A38AD359C20F970C953E85BC /* PBXTargetDependency */,
+			);
+			name = HFViewBinding;
+			productName = HFViewBinding;
+			productReference = A1AADF725B7A673AF29513D3988200C9 /* HFViewBinding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		59BD7ED8A273DB25110167EB606E2120 /* Pods-HFTableCollectionBindingHelper_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20967A16B165BB3C2DFE4CCB6ADF764F /* Build configuration list for PBXNativeTarget "Pods-HFTableCollectionBindingHelper_Tests" */;
+			buildPhases = (
+				6D43D29FDCA4D6B1EBD14255E28DEE4F /* Sources */,
+				06BD704021759AFAB142194C154C4B93 /* Frameworks */,
+				219DDC9F084AA9E90D6F199C1A38D283 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D62D8D416A7F7D911F0E0DAA55D5816 /* PBXTargetDependency */,
+				7A35B00E5BA042A5977E30B233B7BEC8 /* PBXTargetDependency */,
+				3D07B457012434C858F32D8C6D2BFE08 /* PBXTargetDependency */,
+			);
+			name = "Pods-HFTableCollectionBindingHelper_Tests";
+			productName = "Pods-HFTableCollectionBindingHelper_Tests";
+			productReference = 827D7DEAE57725CC7099023004B300F8 /* Pods_HFTableCollectionBindingHelper_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FA9E8162858F4798D3AC8E7657A9646 /* KVOMutableArray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64E1EA8430B0851CD07AB953318AAD87 /* Build configuration list for PBXNativeTarget "KVOMutableArray" */;
+			buildPhases = (
+				CD4FF2AC14F59EA15D196F7F8C1087A1 /* Sources */,
+				ECA422BA74B75B671180A331A1386D77 /* Frameworks */,
+				9ABD134695CC2C89A1A32B01C5660394 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -492,36 +531,36 @@
 			);
 			name = KVOMutableArray;
 			productName = KVOMutableArray;
-			productReference = B07A98C6D3590EC88F6D61E1CF6D61C4 /* KVOMutableArray.framework */;
+			productReference = 461F85BBDCBA7C2A6CBC5F64CA3DA308 /* KVOMutableArray.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4FE82848E901E5FFB71F0129E3203A38 /* Pods-HFTableCollectionBindingHelper_Tests */ = {
+		6FC47CB0891DF069A01108D5D7C1C5AA /* Pods-HFTableCollectionBindingHelper_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE15889A10B3897F5D2F3100BF758591 /* Build configuration list for PBXNativeTarget "Pods-HFTableCollectionBindingHelper_Tests" */;
+			buildConfigurationList = E950352A1EF8A580BF6527A59BF48822 /* Build configuration list for PBXNativeTarget "Pods-HFTableCollectionBindingHelper_Example" */;
 			buildPhases = (
-				BC6D27490CE274E15E4CDD69A9705B13 /* Sources */,
-				2D9235B9984D6872E0386364D3A8CAF7 /* Frameworks */,
-				47CC0A4C6801D497DC785E946FDED4EC /* Headers */,
+				EE352705F80F57E1C42B8B5ED7C5B400 /* Sources */,
+				BDE00377557E346328327ED45BB40C8A /* Frameworks */,
+				EE0084133D3512100914E2398AF2D88B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2309620D496BA76EE7A169CD285BF648 /* PBXTargetDependency */,
-				DE05F30EB713CC4EBDFBB33BCB9CE2B3 /* PBXTargetDependency */,
-				47907F02751272D2BB18B5872AB39142 /* PBXTargetDependency */,
+				18B346E6EA24FCF2E73DC90C255ED941 /* PBXTargetDependency */,
+				3C5371EC1B172A976A9046C4D8FEF179 /* PBXTargetDependency */,
+				A52C1E33D2F34E0A1292D21DBDB5E816 /* PBXTargetDependency */,
 			);
-			name = "Pods-HFTableCollectionBindingHelper_Tests";
-			productName = "Pods-HFTableCollectionBindingHelper_Tests";
-			productReference = 7F6A6601AE24D68199A42D9EA89AD341 /* Pods_HFTableCollectionBindingHelper_Tests.framework */;
+			name = "Pods-HFTableCollectionBindingHelper_Example";
+			productName = "Pods-HFTableCollectionBindingHelper_Example";
+			productReference = D50B80853C0CC1BDC2C2E5F89CD460A9 /* Pods_HFTableCollectionBindingHelper_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6C72A6F557B8952E3E0860C7ABEF9861 /* WZProtocolInterceptor */ = {
+		85BE0D28CA8EAB7EA4F090B40D509F7F /* WZProtocolInterceptor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0182B0FFE263F69595EF4584640BD22B /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */;
+			buildConfigurationList = AF184560C08EC96096BD90BDEAC3D1C7 /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */;
 			buildPhases = (
-				60BB934AE8A4AF377006CFB15FEE5EB2 /* Sources */,
-				2DF4FA36D60B05B3CE779BF70BFF2CFE /* Frameworks */,
-				02770F04BFDB86C4CF13B570DD465FA8 /* Headers */,
+				9B6B92017C8443E09BC9E64AAA9EB475 /* Sources */,
+				109E3CF0D868F71E505F08289414E852 /* Frameworks */,
+				797F47FD8381367E1ED1E267161930FE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -529,46 +568,7 @@
 			);
 			name = WZProtocolInterceptor;
 			productName = WZProtocolInterceptor;
-			productReference = CC561C0475486197D2DAB38DD668DE39 /* WZProtocolInterceptor.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		90DC0279C6F8609CED5E5590FE60EB18 /* HFTableCollectionBindingHelper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C57C62EEBDE9DFF2F24770C6ADFFC393 /* Build configuration list for PBXNativeTarget "HFTableCollectionBindingHelper" */;
-			buildPhases = (
-				28EDE9462278751C1E168F33A44E4870 /* Sources */,
-				4DE6EAF360147BA840E37C99B0759614 /* Frameworks */,
-				0ADA285AEA38A58B7D76DE0E381FBBB9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6072CAEA192FAA65CACB6E46E348B8D3 /* PBXTargetDependency */,
-				5C6B3847D6274C75615AA831BF9CAAC8 /* PBXTargetDependency */,
-			);
-			name = HFTableCollectionBindingHelper;
-			productName = HFTableCollectionBindingHelper;
-			productReference = 4411CBBA95AA55A5B44FEFFC86D7CF3E /* HFTableCollectionBindingHelper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D9A3F572E626289D591CCC4F49BD9591 /* Pods-HFTableCollectionBindingHelper_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 630A55D0161BCCCDE9A3FC117FA1FA71 /* Build configuration list for PBXNativeTarget "Pods-HFTableCollectionBindingHelper_Example" */;
-			buildPhases = (
-				62CC874CA5ED0686C03D8F5DD24042C4 /* Sources */,
-				77B8A1DC9E1B4A841470203FE38C2670 /* Frameworks */,
-				1658C0F722CBB01924AFF38D973EA623 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A59CDEE77E0E08A4D140F78711064085 /* PBXTargetDependency */,
-				CB2ABC18AE2861BAB55AD859321B0C6C /* PBXTargetDependency */,
-				075F79CB3322513B42A9E11271CD190E /* PBXTargetDependency */,
-			);
-			name = "Pods-HFTableCollectionBindingHelper_Example";
-			productName = "Pods-HFTableCollectionBindingHelper_Example";
-			productReference = FFE4B7FD55E097BD1E61FCF0DAB0B26B /* Pods_HFTableCollectionBindingHelper_Example.framework */;
+			productReference = ADBA72DC8C4C6517FE04F1209B9D51B5 /* WZProtocolInterceptor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -588,122 +588,180 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 09CE053EE26FABE51D03CFEE9451E722 /* Products */;
+			productRefGroup = 976F0770BF737065FCD36421797A9A06 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90DC0279C6F8609CED5E5590FE60EB18 /* HFTableCollectionBindingHelper */,
-				2BFDD992C4350D1A8BF6F6ACA793495A /* KVOMutableArray */,
-				D9A3F572E626289D591CCC4F49BD9591 /* Pods-HFTableCollectionBindingHelper_Example */,
-				4FE82848E901E5FFB71F0129E3203A38 /* Pods-HFTableCollectionBindingHelper_Tests */,
-				6C72A6F557B8952E3E0860C7ABEF9861 /* WZProtocolInterceptor */,
+				300511D04DFAA4CE643654D28510D807 /* HFViewBinding */,
+				6FA9E8162858F4798D3AC8E7657A9646 /* KVOMutableArray */,
+				6FC47CB0891DF069A01108D5D7C1C5AA /* Pods-HFTableCollectionBindingHelper_Example */,
+				59BD7ED8A273DB25110167EB606E2120 /* Pods-HFTableCollectionBindingHelper_Tests */,
+				85BE0D28CA8EAB7EA4F090B40D509F7F /* WZProtocolInterceptor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		28EDE9462278751C1E168F33A44E4870 /* Sources */ = {
+		6D43D29FDCA4D6B1EBD14255E28DEE4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB227E52C5E4F27930229B1C28AD3CA /* HFCollectionViewBindingHelper.m in Sources */,
-				345DACA98A9102D357DD80E596F0D4F5 /* HFMetaBindingHelper.m in Sources */,
-				895D8635AC613319F8DB60CE56DE4AF0 /* HFTableCollectionBindingHelper-dummy.m in Sources */,
-				2ABB6E431BB25B9CAAAAEF45A47CC07B /* HFTableViewBindingHelper.m in Sources */,
+				6E9B366866ACD1FEA1E9DFD9CCEAEF05 /* Pods-HFTableCollectionBindingHelper_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CE04426B8476F3F6B661C16125543E5 /* Sources */ = {
+		80D88CE64D539003B2B6AAD1078A4131 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E1666632255BF1140262E37BD5ADCB7 /* KVOMutableArray-dummy.m in Sources */,
-				08577615A553BD8E06F50EF18EFF0278 /* KVOMutableArray.m in Sources */,
-				A8A4EEB8D89BBDF301BF4F809751DE85 /* KVOMutableArrayObserver.m in Sources */,
-				3CC8475EAB72394C3312C0DAE4FA5639 /* NSObject+BlockObservation.m in Sources */,
+				CA51325C2C52C806EE09756D1914400C /* HFCollectionViewBinding.m in Sources */,
+				EBE6C84BD78257CD6BF4491B993F9E8A /* HFMetaBinding.m in Sources */,
+				29109203A564B9266068EFB83F28C413 /* HFTableViewBinding.m in Sources */,
+				75E39A5B73D252AF74B894007E3CA10E /* HFViewBinding-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60BB934AE8A4AF377006CFB15FEE5EB2 /* Sources */ = {
+		9B6B92017C8443E09BC9E64AAA9EB475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				416CA55F4066AB7197225E3BB92E7C41 /* ReplaceMe.m in Sources */,
-				98A81A55732D1504446DECE3AAC979DC /* WZProtocolInterceptor-dummy.m in Sources */,
-				E6E74B3375F4FE70A5BA917EFD71D556 /* WZProtocolInterceptor.m in Sources */,
+				BB6B009E0123DA5432F73313660A9030 /* ReplaceMe.m in Sources */,
+				4D8E5998A1CC4532D7DA04C9445FB4F5 /* WZProtocolInterceptor-dummy.m in Sources */,
+				38060DFA303E20FD0CC080CDEC010D5E /* WZProtocolInterceptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62CC874CA5ED0686C03D8F5DD24042C4 /* Sources */ = {
+		CD4FF2AC14F59EA15D196F7F8C1087A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C6FE3EC56DA844EAFB9E4C0F76EBF1 /* Pods-HFTableCollectionBindingHelper_Example-dummy.m in Sources */,
+				69D3D545F5E7C8F6BBE75F4421DE494D /* KVOMutableArray-dummy.m in Sources */,
+				68582ACD8583289E51E3F4D2345D4D9C /* KVOMutableArray.m in Sources */,
+				3E9C6C2169D206F2451BA9C17E9FBC7A /* KVOMutableArrayObserver.m in Sources */,
+				F587F394BA4BF2B19F98FBD5C669E3B8 /* NSObject+BlockObservation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC6D27490CE274E15E4CDD69A9705B13 /* Sources */ = {
+		EE352705F80F57E1C42B8B5ED7C5B400 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29137D05B1C453BCBC615BDE89A6ED6A /* Pods-HFTableCollectionBindingHelper_Tests-dummy.m in Sources */,
+				227F926A00D0E570A540AB3A254ECE0D /* Pods-HFTableCollectionBindingHelper_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		075F79CB3322513B42A9E11271CD190E /* PBXTargetDependency */ = {
+		18B346E6EA24FCF2E73DC90C255ED941 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = WZProtocolInterceptor;
-			target = 6C72A6F557B8952E3E0860C7ABEF9861 /* WZProtocolInterceptor */;
-			targetProxy = DB18740D57680236BEB9E290E7F25EF1 /* PBXContainerItemProxy */;
+			name = HFViewBinding;
+			target = 300511D04DFAA4CE643654D28510D807 /* HFViewBinding */;
+			targetProxy = 8A4C43A227564FF4026C02728E9C7638 /* PBXContainerItemProxy */;
 		};
-		2309620D496BA76EE7A169CD285BF648 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HFTableCollectionBindingHelper;
-			target = 90DC0279C6F8609CED5E5590FE60EB18 /* HFTableCollectionBindingHelper */;
-			targetProxy = 9987EA4790FCB09266820CDA6015FDCD /* PBXContainerItemProxy */;
-		};
-		47907F02751272D2BB18B5872AB39142 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WZProtocolInterceptor;
-			target = 6C72A6F557B8952E3E0860C7ABEF9861 /* WZProtocolInterceptor */;
-			targetProxy = A1C13B6441AD574B0B47EE311B82B9D7 /* PBXContainerItemProxy */;
-		};
-		5C6B3847D6274C75615AA831BF9CAAC8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WZProtocolInterceptor;
-			target = 6C72A6F557B8952E3E0860C7ABEF9861 /* WZProtocolInterceptor */;
-			targetProxy = B4E0105B28E64E1AB91027073E593EB7 /* PBXContainerItemProxy */;
-		};
-		6072CAEA192FAA65CACB6E46E348B8D3 /* PBXTargetDependency */ = {
+		3C5371EC1B172A976A9046C4D8FEF179 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KVOMutableArray;
-			target = 2BFDD992C4350D1A8BF6F6ACA793495A /* KVOMutableArray */;
-			targetProxy = 792EAF721318A95846B4B54E41539364 /* PBXContainerItemProxy */;
+			target = 6FA9E8162858F4798D3AC8E7657A9646 /* KVOMutableArray */;
+			targetProxy = 6B3A0C9BC011C86F638EEA6BA183251F /* PBXContainerItemProxy */;
 		};
-		A59CDEE77E0E08A4D140F78711064085 /* PBXTargetDependency */ = {
+		3D07B457012434C858F32D8C6D2BFE08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = HFTableCollectionBindingHelper;
-			target = 90DC0279C6F8609CED5E5590FE60EB18 /* HFTableCollectionBindingHelper */;
-			targetProxy = A5E428FE32B24526CF9849C4EF5B29BB /* PBXContainerItemProxy */;
+			name = WZProtocolInterceptor;
+			target = 85BE0D28CA8EAB7EA4F090B40D509F7F /* WZProtocolInterceptor */;
+			targetProxy = F48EF3AE077BC0D959AEF95E14323FE4 /* PBXContainerItemProxy */;
 		};
-		CB2ABC18AE2861BAB55AD859321B0C6C /* PBXTargetDependency */ = {
+		3D62D8D416A7F7D911F0E0DAA55D5816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HFViewBinding;
+			target = 300511D04DFAA4CE643654D28510D807 /* HFViewBinding */;
+			targetProxy = E53F97530C3D519CBCD2C492006157BD /* PBXContainerItemProxy */;
+		};
+		54BE98A6A38AD359C20F970C953E85BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WZProtocolInterceptor;
+			target = 85BE0D28CA8EAB7EA4F090B40D509F7F /* WZProtocolInterceptor */;
+			targetProxy = 907DD13989D12C11F6E566D9AE132EB7 /* PBXContainerItemProxy */;
+		};
+		7A35B00E5BA042A5977E30B233B7BEC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KVOMutableArray;
-			target = 2BFDD992C4350D1A8BF6F6ACA793495A /* KVOMutableArray */;
-			targetProxy = 95AE9B97107773249B072224764FCFBA /* PBXContainerItemProxy */;
+			target = 6FA9E8162858F4798D3AC8E7657A9646 /* KVOMutableArray */;
+			targetProxy = F9B90BD0F7BA49076AA5BDFF109F988C /* PBXContainerItemProxy */;
 		};
-		DE05F30EB713CC4EBDFBB33BCB9CE2B3 /* PBXTargetDependency */ = {
+		80FBF623A9E9B658A00C0BB880C68AF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KVOMutableArray;
-			target = 2BFDD992C4350D1A8BF6F6ACA793495A /* KVOMutableArray */;
-			targetProxy = 754689546BA5859E1018739662ACD13B /* PBXContainerItemProxy */;
+			target = 6FA9E8162858F4798D3AC8E7657A9646 /* KVOMutableArray */;
+			targetProxy = 70207881611C5BECA8E2D0727328D7C1 /* PBXContainerItemProxy */;
+		};
+		A52C1E33D2F34E0A1292D21DBDB5E816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WZProtocolInterceptor;
+			target = 85BE0D28CA8EAB7EA4F090B40D509F7F /* WZProtocolInterceptor */;
+			targetProxy = 8FFF7864255F99615FF54B2CB18F5D1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1331729A59AC4C0C09C9E0D7F2C40A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E1EAD814BC8AAB13B543ADF101866B /* HFViewBinding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HFViewBinding/HFViewBinding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HFViewBinding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HFViewBinding/HFViewBinding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HFViewBinding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E2AA92867ADF018BF950E3B7BE2C77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B6EAD8586FEAD8F04F3BB6F9131DD63 /* WZProtocolInterceptor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZProtocolInterceptor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = WZProtocolInterceptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -746,9 +804,9 @@
 			};
 			name = Debug;
 		};
-		4A1E3E0CB0DF983621AFE026138EFE9D /* Debug */ = {
+		5B47361B712369A5F3FBB939EB01936C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73894F7B766AE6D6981915F39811DCE1 /* HFTableCollectionBindingHelper.xcconfig */;
+			baseConfigurationReference = 83E1EAD814BC8AAB13B543ADF101866B /* HFViewBinding.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -759,14 +817,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HFTableCollectionBindingHelper/HFTableCollectionBindingHelper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HFTableCollectionBindingHelper/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HFViewBinding/HFViewBinding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HFViewBinding/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HFTableCollectionBindingHelper/HFTableCollectionBindingHelper.modulemap";
+				MODULEMAP_FILE = "Target Support Files/HFViewBinding/HFViewBinding.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HFTableCollectionBindingHelper;
+				PRODUCT_NAME = HFViewBinding;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -775,42 +833,13 @@
 			};
 			name = Debug;
 		};
-		6F58F1B76622EDF1B5B94C07A8B8A51F /* Debug */ = {
+		82ED648A2475DF169F47C2BDEBDFE251 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B6EAD8586FEAD8F04F3BB6F9131DD63 /* WZProtocolInterceptor.xcconfig */;
+			baseConfigurationReference = 6B08DCAB645AB3ABB31365C8F2052B1A /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZProtocolInterceptor/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = WZProtocolInterceptor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		857259154844FF4CD1EB5036BCD9DC8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B30463CA5D7228F6310E1B9B0DA695 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -823,7 +852,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -835,11 +864,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		872B0A3FCB96E883B1DC08C7669CC47A /* Release */ = {
+		88694FDEBF50A535CF39CD81D6F9CFB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73894F7B766AE6D6981915F39811DCE1 /* HFTableCollectionBindingHelper.xcconfig */;
+			baseConfigurationReference = 5B6EAD8586FEAD8F04F3BB6F9131DD63 /* WZProtocolInterceptor.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -850,14 +879,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HFTableCollectionBindingHelper/HFTableCollectionBindingHelper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HFTableCollectionBindingHelper/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZProtocolInterceptor/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HFTableCollectionBindingHelper/HFTableCollectionBindingHelper.modulemap";
+				MODULEMAP_FILE = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HFTableCollectionBindingHelper;
+				PRODUCT_NAME = WZProtocolInterceptor;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -866,40 +895,7 @@
 			};
 			name = Release;
 		};
-		94D5F2A4A3CDDA8D30A6161653900306 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A8C98D8391C95633AB471DD524E759D /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HFTableCollectionBindingHelper_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A11DF97EA39AFC3D1176181EDBA91339 /* Release */ = {
+		901ED74B0F93D96E14C51EBBC4A39F69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1A3353EEAEF701A048D6435D6A0BC64 /* KVOMutableArray.xcconfig */;
 			buildSettings = {
@@ -966,69 +962,7 @@
 			};
 			name = Release;
 		};
-		AD5FFE793C59860C87C133FF0AAC65DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B08DCAB645AB3ABB31365C8F2052B1A /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HFTableCollectionBindingHelper_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B16AE8459EAC999E62D79137A971B4E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B6EAD8586FEAD8F04F3BB6F9131DD63 /* WZProtocolInterceptor.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZProtocolInterceptor/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = WZProtocolInterceptor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D106505442F1ADEDA3E0D94A7A4D312B /* Debug */ = {
+		ABCF2F1A51DDE748BCCA10F0FA3D9454 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 667D1AC7BCD4AE16A2FB69E410583386 /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -1061,7 +995,40 @@
 			};
 			name = Debug;
 		};
-		EF5AA7FC807E075AA3E6F9033218E07E /* Debug */ = {
+		E00074E03420320494AA9BFB7CDCEC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B30463CA5D7228F6310E1B9B0DA695 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HFTableCollectionBindingHelper_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8771BDD355C5699A2735BEEDF7AD06F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1A3353EEAEF701A048D6435D6A0BC64 /* KVOMutableArray.xcconfig */;
 			buildSettings = {
@@ -1090,14 +1057,47 @@
 			};
 			name = Debug;
 		};
+		FAB6E1C0C8B8D902C44BFBA072D70DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8C98D8391C95633AB471DD524E759D /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HFTableCollectionBindingHelper_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0182B0FFE263F69595EF4584640BD22B /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */ = {
+		20967A16B165BB3C2DFE4CCB6ADF764F /* Build configuration list for PBXNativeTarget "Pods-HFTableCollectionBindingHelper_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F58F1B76622EDF1B5B94C07A8B8A51F /* Debug */,
-				B16AE8459EAC999E62D79137A971B4E3 /* Release */,
+				ABCF2F1A51DDE748BCCA10F0FA3D9454 /* Debug */,
+				FAB6E1C0C8B8D902C44BFBA072D70DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1111,38 +1111,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		630A55D0161BCCCDE9A3FC117FA1FA71 /* Build configuration list for PBXNativeTarget "Pods-HFTableCollectionBindingHelper_Example" */ = {
+		64E1EA8430B0851CD07AB953318AAD87 /* Build configuration list for PBXNativeTarget "KVOMutableArray" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD5FFE793C59860C87C133FF0AAC65DE /* Debug */,
-				857259154844FF4CD1EB5036BCD9DC8B /* Release */,
+				F8771BDD355C5699A2735BEEDF7AD06F /* Debug */,
+				901ED74B0F93D96E14C51EBBC4A39F69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C57C62EEBDE9DFF2F24770C6ADFFC393 /* Build configuration list for PBXNativeTarget "HFTableCollectionBindingHelper" */ = {
+		738C0B7DDBA62E7D0416E76468E8C7BF /* Build configuration list for PBXNativeTarget "HFViewBinding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A1E3E0CB0DF983621AFE026138EFE9D /* Debug */,
-				872B0A3FCB96E883B1DC08C7669CC47A /* Release */,
+				5B47361B712369A5F3FBB939EB01936C /* Debug */,
+				1331729A59AC4C0C09C9E0D7F2C40A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE15889A10B3897F5D2F3100BF758591 /* Build configuration list for PBXNativeTarget "Pods-HFTableCollectionBindingHelper_Tests" */ = {
+		AF184560C08EC96096BD90BDEAC3D1C7 /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D106505442F1ADEDA3E0D94A7A4D312B /* Debug */,
-				94D5F2A4A3CDDA8D30A6161653900306 /* Release */,
+				1E2AA92867ADF018BF950E3B7BE2C77C /* Debug */,
+				88694FDEBF50A535CF39CD81D6F9CFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC1FE6D91AFD0985E9E15395DE444C64 /* Build configuration list for PBXNativeTarget "KVOMutableArray" */ = {
+		E950352A1EF8A580BF6527A59BF48822 /* Build configuration list for PBXNativeTarget "Pods-HFTableCollectionBindingHelper_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF5AA7FC807E075AA3E6F9033218E07E /* Debug */,
-				A11DF97EA39AFC3D1176181EDBA91339 /* Release */,
+				82ED648A2475DF169F47C2BDEBDFE251 /* Debug */,
+				E00074E03420320494AA9BFB7CDCEC55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

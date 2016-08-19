@@ -1,6 +1,0 @@
-framework module HFTableCollectionBindingHelper {
-  umbrella header "HFTableCollectionBindingHelper-umbrella.h"
-
-  export *
-  module * { export * }
-}

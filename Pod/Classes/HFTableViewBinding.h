@@ -1,5 +1,5 @@
 //
-//  HFTableViewBindingHelper.h
+//  HFTableViewBinding.h
 //  SpicyGymLog
 //
 //  Created by Hai Feng Kao on 2015/5/30.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "HFMetaBindingHelper.h"
+#import "HFMetaBinding.h"
 
-@interface HFTableViewBindingHelper : HFMetaBindingHelper
+@interface HFTableViewBinding : HFMetaBinding
 
 @property (nonatomic, weak) UITableView* tableView;
 @property (nonatomic, weak) id <UITableViewDelegate>   delegate;

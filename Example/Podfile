@@ -2,10 +2,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'HFTableCollectionBindingHelper_Example' do
-  pod "HFTableCollectionBindingHelper", :path => "../"
+  pod 'HFViewBinding', :path => "../"
   target 'HFTableCollectionBindingHelper_Tests' do
     inherit! :search_paths
-    pod "HFTableCollectionBindingHelper", :path => "../"
+    pod "HFViewBinding", :path => "../"
   end
 end
 

@@ -1,15 +1,15 @@
 //
-//  HFCollectionBindingHelper.h
-//  SpicyGymLog
+//  HFCollectionViewBinding.h
+//  
 //
 //  Created by Hai Feng Kao on 2015/5/21.
 //  Copyright (c) 2015年 CocoaSpice. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "HFMetaBindingHelper.h"
+#import "HFMetaBinding.h"
 
-@interface HFCollectionViewBindingHelper : HFMetaBindingHelper <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface HFCollectionViewBinding : HFMetaBinding <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, weak) UICollectionView* collectionView;
 @property (nonatomic, weak) id <UICollectionViewDelegate>   delegate;

@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/HFTableCollectionBindingHelper/HFTableCollectionBindingHelper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/HFViewBinding/HFViewBinding.framework"
   install_framework "$BUILT_PRODUCTS_DIR/KVOMutableArray/KVOMutableArray.framework"
   install_framework "$BUILT_PRODUCTS_DIR/WZProtocolInterceptor/WZProtocolInterceptor.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/HFTableCollectionBindingHelper/HFTableCollectionBindingHelper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/HFViewBinding/HFViewBinding.framework"
   install_framework "$BUILT_PRODUCTS_DIR/KVOMutableArray/KVOMutableArray.framework"
   install_framework "$BUILT_PRODUCTS_DIR/WZProtocolInterceptor/WZProtocolInterceptor.framework"
 fi

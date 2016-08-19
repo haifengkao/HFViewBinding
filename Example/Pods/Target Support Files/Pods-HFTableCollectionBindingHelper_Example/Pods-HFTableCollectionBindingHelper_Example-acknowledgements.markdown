@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## HFTableCollectionBindingHelper
+## HFViewBinding
 
 Copyright (c) 2015 Hai Feng Kao <haifeng@cocoaspice.in>
 

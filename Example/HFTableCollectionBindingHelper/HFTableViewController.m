@@ -8,12 +8,12 @@
 
 #import "HFTableViewController.h"
 #import "KVOMutableArray.h"
-#import "HFTableViewBindingHelper.h"
+#import "HFTableViewBinding.h"
 #import "ItemCell.h"
 
 @interface HFTableViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) KVOMutableArray* data;
-@property (nonatomic, strong) HFTableViewBindingHelper* bindingHelper;
+@property (nonatomic, strong) HFTableViewBinding* bindingHelper;
 @property (nonatomic, assign) NSInteger count; // track the dummy cell number
 @end
 
@@ -36,7 +36,7 @@
     self.count = 2;
     
     // Do any additional setup after loading the view, typically from a nib.
-    self.bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView sourceList:self.data didSelectionBlock:^(id model) {
+    self.bindingHelper = [HFTableViewBinding bindingForTableView:self.tableView sourceList:self.data didSelectionBlock:^(id model) {
         
     } templateCellClassName:@"ItemCell"
     isNested:NO];

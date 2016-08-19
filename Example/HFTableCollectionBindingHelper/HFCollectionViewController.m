@@ -7,9 +7,11 @@
 //
 
 #import "HFCollectionViewController.h"
-#import "HFcollectionViewBindingHelper.h"
+#import "HFCollectionViewBinding.h"
+#import "HFBindingDelegate.h"
+#import "KVOMutableArray.h"
 
-@interface HFCollectionViewCell : UICollectionViewCell<HFBindingViewDelegate>
+@interface HFCollectionViewCell : UICollectionViewCell<HFBindingDelegate>
 
 @end
 
@@ -21,7 +23,7 @@
 @end
 
 @interface HFCollectionViewController ()
-@property HFCollectionViewBindingHelper* bindingHelper;
+@property HFCollectionViewBinding* bindingHelper;
 @property KVOMutableArray* data;
 @end
 
@@ -51,7 +53,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.data addObject:[UIColor cyanColor]];
     
     // Do any additional setup after loading the view, typically from a nib.
-    self.bindingHelper = [HFCollectionViewBindingHelper
+    self.bindingHelper = [HFCollectionViewBinding
                           bindingForCollectionView:self.collectionView
                           sourceList:self.data
                           didSelectionBlock:^(id model) {

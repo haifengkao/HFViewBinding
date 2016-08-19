@@ -1,25 +1,25 @@
 //
-//  HFTableViewBindingHelper.m
+//  HFTableViewBinding.m
 //  SpicyGymLog
 //
 //  Created by Hai Feng Kao on 2015/5/30.
 //  Copyright (c) 2015年 CocoaSpice. All rights reserved.
 //
 
-#import "HFTableViewBindingHelper.h"
+#import "HFTableViewBinding.h"
 #import "KVOMutableArray.h"
-#import "HFMetaBindingHelper.h"
-#import "HFBindingViewDelegate.h"
+#import "HFMetaBinding.h"
+#import "HFBindingDelegate.h"
 #import "WZProtocolInterceptor.h"
 
-@interface HFTableViewBindingHelper ()<UITableViewDataSource, UITableViewDelegate>
+@interface HFTableViewBinding ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) UITableViewCell* templateCell;
 @property (nonatomic, copy) NSString * cellIdentifier;
 @property (nonatomic, strong) WZProtocolInterceptor* delegateInterceptor;
 @property (nonatomic, strong) WZProtocolInterceptor* dataSourceInterceptor;
 @end
 
-@implementation HFTableViewBindingHelper
+@implementation HFTableViewBinding
 
 + (instancetype)bindingForTableView:(UITableView *)tableView
                          sourceList:(KVOMutableArray*)source
@@ -138,7 +138,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    id<HFBindingViewDelegate> cell = [super cellForItemAtIndexPath:indexPath];
+    id<HFBindingDelegate> cell = [super cellForItemAtIndexPath:indexPath];
     if ([cell isKindOfClass:[UITableViewCell class]]) {
         return (UITableViewCell*)cell;
     } else {
@@ -221,9 +221,9 @@
     [self.tableView endUpdates];
 }
 
-- (id<HFBindingViewDelegate>)dequeueReusableCellWithIndexPath:(NSIndexPath*)indexPath
+- (id<HFBindingDelegate>)dequeueReusableCellWithIndexPath:(NSIndexPath*)indexPath
 {
-    id<HFBindingViewDelegate> cell = [self.tableView
+    id<HFBindingDelegate> cell = [self.tableView
                                       dequeueReusableCellWithIdentifier:self.cellIdentifier
                                                            forIndexPath:indexPath];
     return cell;

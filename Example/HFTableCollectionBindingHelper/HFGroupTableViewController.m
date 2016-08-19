@@ -7,12 +7,13 @@
 //
 
 #import "HFGroupTableViewController.h"
-#import "HFTableViewBindingHelper.h"
+#import "HFTableViewBinding.h"
 #import "Item.h"
+#import "KVOMutableArray.h"
 
 @interface HFGroupTableViewController ()
 @property (nonatomic, strong) KVOMutableArray* data;
-@property (nonatomic, strong) HFTableViewBindingHelper* bindingHelper;
+@property (nonatomic, strong) HFTableViewBinding* bindingHelper;
 @end
 
 @implementation HFGroupTableViewController
@@ -42,7 +43,7 @@
     [self.data addObject:row2];
     
     // Do any additional setup after loading the view, typically from a nib.
-    self.bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView sourceList:self.data didSelectionBlock:^(id model) {
+    self.bindingHelper = [HFTableViewBinding bindingForTableView:self.tableView sourceList:self.data didSelectionBlock:^(id model) {
         
     } templateCellClassName:@"ItemCell"
                                                               isNested:YES];
@@ -68,7 +69,7 @@
     NSInteger lastRowItemNum = [(KVOMutableArray*)[self.data.arr lastObject] count];
     Item* item = [Item new];
     
-    item.name = [NSString stringWithFormat:@"cell %lu %d", (unsigned long)self.data.count, lastRowItemNum+1];
+    item.name = [NSString stringWithFormat:@"cell %lu %ld", (unsigned long)self.data.count, lastRowItemNum+1];
     [(KVOMutableArray*)[self.data.arr lastObject] addObject:item];
 }
 

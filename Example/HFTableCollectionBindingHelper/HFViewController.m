@@ -8,13 +8,13 @@
 
 #import "HFViewController.h"
 #import "KVOMutableArray.h"
-#import "HFTableViewBindingHelper.h"
+#import "HFTableViewBinding.h"
 #import "ItemCell.h"
 
 
 @interface HFViewController ()
 @property (nonatomic, strong) KVOMutableArray* data;
-@property (nonatomic, strong) HFTableViewBindingHelper* bindingHelper;
+@property (nonatomic, strong) HFTableViewBinding* bindingHelper;
 @end
 
 @implementation HFViewController
@@ -41,7 +41,7 @@
     
 	// Do any additional setup after loading the view, typically from a nib.
     typeof(self) __weak selfRef = self;
-    self.bindingHelper = [HFTableViewBindingHelper bindingForTableView:self.tableView sourceList:self.data didSelectionBlock:^(id model) {
+    self.bindingHelper = [HFTableViewBinding bindingForTableView:self.tableView sourceList:self.data didSelectionBlock:^(id model) {
         typeof(self) self = selfRef;
         [self showDetail:model];
         

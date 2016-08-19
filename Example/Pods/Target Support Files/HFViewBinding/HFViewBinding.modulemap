@@ -1,0 +1,6 @@
+framework module HFViewBinding {
+  umbrella header "HFViewBinding-umbrella.h"
+
+  export *
+  module * { export * }
+}
