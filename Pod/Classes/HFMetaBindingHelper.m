@@ -33,6 +33,12 @@ static inline id safe_cast_helper(id x, Class c) {
 
 @implementation HFMetaBindingHelper
 
+- (instancetype)init
+{
+    NSAssert(NO, @"dont use init");
+    return [self initForSourceList:nil didSelectionBlock:nil isNested:NO];
+}
+
 - (instancetype)initForSourceList:(KVOMutableArray *)source
                 didSelectionBlock:(HFSelectionBlock)block
                          isNested:(BOOL)isNested
