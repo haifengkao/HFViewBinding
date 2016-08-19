@@ -7,6 +7,8 @@
 //
 
 #import "HFCollectionViewBindingHelper.h"
+#import "KVOMutableArray.h"
+#import "HFMetaBindingHelper.h"
 #import "HFBindingViewDelegate.h"
 #import "WZProtocolInterceptor.h"
 

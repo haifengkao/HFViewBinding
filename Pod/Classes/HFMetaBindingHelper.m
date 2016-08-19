@@ -8,6 +8,7 @@
 
 #import "HFMetaBindingHelper.h"
 #import "HFBindingViewDelegate.h"
+#import "KVOMutableArray.h"
 
 #if !defined(SAFE_CAST)
 #define SAFE_CAST(Object, Type) (Type *)safe_cast_helper(Object, [Type class])

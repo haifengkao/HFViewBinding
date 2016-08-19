@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "KVOMutableArray.h"
-#import "HFBindingViewDelegate.h"
+@class KVOMutableArray;
+@protocol HFBindingViewDelegate;
 
 typedef void (^HFSelectionBlock)(id model);
 
