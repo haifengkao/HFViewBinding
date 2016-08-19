@@ -2,7 +2,7 @@
 //  HFTableViewBindingHelper.m
 //  SpicyGymLog
 //
-//  Created by Lono on 2015/5/30.
+//  Created by Hai Feng Kao on 2015/5/30.
 //  Copyright (c) 2015年 CocoaSpice. All rights reserved.
 //
 

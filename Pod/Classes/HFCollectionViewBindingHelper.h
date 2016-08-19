@@ -2,7 +2,7 @@
 //  HFCollectionBindingHelper.h
 //  SpicyGymLog
 //
-//  Created by Lono on 2015/5/21.
+//  Created by Hai Feng Kao on 2015/5/21.
 //  Copyright (c) 2015年 CocoaSpice. All rights reserved.
 //
 

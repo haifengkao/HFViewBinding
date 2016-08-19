@@ -2,7 +2,7 @@
 //  HFGroupTableViewController.m
 //  HFTableCollectionBindingHelper
 //
-//  Created by Lono on 2015/6/5.
+//  Created by Hai Feng Kao on 2015/6/5.
 //  Copyright (c) 2015年 Hai Feng Kao. All rights reserved.
 //
 
