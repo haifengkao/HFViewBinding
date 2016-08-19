@@ -1,15 +1,10 @@
 PODS:
-  - HFTableCollectionBindingHelper (0.3.0):
-    - KVOMutableArray/ReactiveCocoaSupport
-    - ReactiveCocoa/Core
+  - HFTableCollectionBindingHelper (0.8.0):
+    - KVOMutableArray
     - WZProtocolInterceptor
+  - KVOMutableArray (1.0.2):
+    - KVOMutableArray/Core (= 1.0.2)
   - KVOMutableArray/Core (1.0.2)
-  - KVOMutableArray/ReactiveCocoaSupport (1.0.2):
-    - KVOMutableArray/Core
-    - ReactiveCocoa/Core
-  - ReactiveCocoa/Core (2.5):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5)
   - WZProtocolInterceptor (0.1.0)
 
 DEPENDENCIES:
@@ -17,12 +12,13 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   HFTableCollectionBindingHelper:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  HFTableCollectionBindingHelper: 568140d53a08b6cda5c1d282b3450974971b25c4
+  HFTableCollectionBindingHelper: 4becc047bd7d7f5835c49991c1bf48e21d49803f
   KVOMutableArray: f9c017c80845f0345e066df6d21bd870170539bc
-  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   WZProtocolInterceptor: 56c395e4b3323140421eba99546be362aabc041e
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: e61d58b4310d08ced2de22448a1cb3f9929e22ed
+
+COCOAPODS: 1.0.1

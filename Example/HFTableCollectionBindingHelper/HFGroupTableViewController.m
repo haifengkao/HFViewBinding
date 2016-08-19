@@ -68,7 +68,7 @@
     NSInteger lastRowItemNum = [(KVOMutableArray*)[self.data.arr lastObject] count];
     Item* item = [Item new];
     
-    item.name = [NSString stringWithFormat:@"cell %d %d", self.data.count, lastRowItemNum+1];
+    item.name = [NSString stringWithFormat:@"cell %lu %d", (unsigned long)self.data.count, lastRowItemNum+1];
     [(KVOMutableArray*)[self.data.arr lastObject] addObject:item];
 }
 

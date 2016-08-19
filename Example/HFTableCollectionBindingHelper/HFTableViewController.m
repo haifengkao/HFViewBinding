@@ -54,7 +54,7 @@
 {
     
     Item* item = [Item new];
-    item.name = [NSString stringWithFormat:@"cell %d", self.count];
+    item.name = [NSString stringWithFormat:@"cell %ld", (long)self.count];
     
     [self.data addObject:item];
     ++self.count;
@@ -101,7 +101,7 @@
         NSMutableArray* items = [NSMutableArray new];;
         for (NSInteger i = 0; i < num; ++i) {
             Item* item = [Item new];
-            item.name = [NSString stringWithFormat:@"cell %d", self.count];
+            item.name = [NSString stringWithFormat:@"cell %ld", (long)self.count];
             ++self.count;
             [items addObject:item];
         }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		265B7987F0360E04350FCF11 /* Pods_HFTableCollectionBindingHelper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542CFEE41E70A5899374512D /* Pods_HFTableCollectionBindingHelper_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +21,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		7A03FDFB7015BB2A51BD6DBA /* Pods_HFTableCollectionBindingHelper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8067B55504B9AADF645D00C4 /* Pods_HFTableCollectionBindingHelper_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6AB9F2A534F4C4E4B9CD9211 /* Pods_HFTableCollectionBindingHelper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC710FC7C7F277A9E23A9CB /* Pods_HFTableCollectionBindingHelper_Tests.framework */; };
+		7D403B273AE36810032A6515 /* Pods_HFTableCollectionBindingHelper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FDCE741CE9768598269AFD /* Pods_HFTableCollectionBindingHelper_Example.framework */; };
 		B59740EC1C1C3C5F0029C894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59740EA1C1C3C5F0029C894 /* LaunchScreen.storyboard */; };
 		F904FACC1B217BC500A2DCBF /* HFGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F904FACB1B217BC500A2DCBF /* HFGroupTableViewController.m */; };
 		F904FACD1B217BC500A2DCBF /* HFGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F904FACB1B217BC500A2DCBF /* HFGroupTableViewController.m */; };
@@ -46,10 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AC710FC7C7F277A9E23A9CB /* Pods_HFTableCollectionBindingHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTableCollectionBindingHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC614C43807084477D0A1C9 /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3F1184DA2773321773231A89 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4637335AAC5ABB462B86CED5 /* HFTableCollectionBindingHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HFTableCollectionBindingHelper.podspec; path = ../HFTableCollectionBindingHelper.podspec; sourceTree = "<group>"; };
-		4B8395D1CE853121A30AB7CE /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		542CFEE41E70A5899374512D /* Pods_HFTableCollectionBindingHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTableCollectionBindingHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51FC965CF9DBF091DE49646E /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HFTableCollectionBindingHelper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFTableCollectionBindingHelper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,11 +71,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		8067B55504B9AADF645D00C4 /* Pods_HFTableCollectionBindingHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTableCollectionBindingHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9471D2229075D08AA28397B1 /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		86E007BAC50EA2A2A172FE51 /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B59740EB1C1C3C5F0029C894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C20B06BA66A3319C60621AF7 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D2617AB44526560CD3EBC295 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D571F5EB4A4354A5451962F4 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E6FDCE741CE9768598269AFD /* Pods_HFTableCollectionBindingHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTableCollectionBindingHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F904FACA1B217BC500A2DCBF /* HFGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFGroupTableViewController.h; sourceTree = "<group>"; };
 		F904FACB1B217BC500A2DCBF /* HFGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFGroupTableViewController.m; sourceTree = "<group>"; };
 		F9AD77C81B7339F300D2B3F5 /* HFCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCollectionViewController.h; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		F9F9AA181B203B180038B3BB /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		F9F9AA1B1B203B4B0038B3BB /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
 		F9F9AA1C1B203B4B0038B3BB /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
-		FBE584CBED272F39A64C82C8 /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				7A03FDFB7015BB2A51BD6DBA /* Pods_HFTableCollectionBindingHelper_Example.framework in Frameworks */,
+				7D403B273AE36810032A6515 /* Pods_HFTableCollectionBindingHelper_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,13 +107,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				265B7987F0360E04350FCF11 /* Pods_HFTableCollectionBindingHelper_Tests.framework in Frameworks */,
+				6AB9F2A534F4C4E4B9CD9211 /* Pods_HFTableCollectionBindingHelper_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F41C2DF7BA1604FE7506656 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86E007BAC50EA2A2A172FE51 /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */,
+				D571F5EB4A4354A5451962F4 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */,
+				51FC965CF9DBF091DE49646E /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */,
+				2EC614C43807084477D0A1C9 /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +133,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				F8E0C9F01A24D9BB55B9BC7C /* Pods */,
+				1F41C2DF7BA1604FE7506656 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,8 +153,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				8067B55504B9AADF645D00C4 /* Pods_HFTableCollectionBindingHelper_Example.framework */,
-				542CFEE41E70A5899374512D /* Pods_HFTableCollectionBindingHelper_Tests.framework */,
+				E6FDCE741CE9768598269AFD /* Pods_HFTableCollectionBindingHelper_Example.framework */,
+				2AC710FC7C7F277A9E23A9CB /* Pods_HFTableCollectionBindingHelper_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,17 +225,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		F8E0C9F01A24D9BB55B9BC7C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FBE584CBED272F39A64C82C8 /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */,
-				C20B06BA66A3319C60621AF7 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */,
-				9471D2229075D08AA28397B1 /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */,
-				4B8395D1CE853121A30AB7CE /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,12 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "HFTableCollectionBindingHelper_Example" */;
 			buildPhases = (
-				5A4F06E4E691BB710DD649FD /* Check Pods Manifest.lock */,
+				7E6989570402772BB1EC2207 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				D0CA4833E85BA858F3D9A69D /* Embed Pods Frameworks */,
-				E66CA6BA1DA370B6D8FD7DFF /* Copy Pods Resources */,
+				008A62CB2DCB6C73F37D7F7B /* [CP] Embed Pods Frameworks */,
+				84A71B50C5FABDD526888605 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,12 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "HFTableCollectionBindingHelper_Tests" */;
 			buildPhases = (
-				03053CC721ED518580007ABA /* Check Pods Manifest.lock */,
+				E21B7AF1A3E356C472014177 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				57E85FB1B95033378F2CA7F7 /* Embed Pods Frameworks */,
-				F64F1CA22D54315186A9D366 /* Copy Pods Resources */,
+				961CC1C2B4A2C0064B2680E4 /* [CP] Embed Pods Frameworks */,
+				9AB0F351711A1D4DD8C66498 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,59 +326,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03053CC721ED518580007ABA /* Check Pods Manifest.lock */ = {
+		008A62CB2DCB6C73F37D7F7B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		57E85FB1B95033378F2CA7F7 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A4F06E4E691BB710DD649FD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D0CA4833E85BA858F3D9A69D /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,14 +341,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E66CA6BA1DA370B6D8FD7DFF /* Copy Pods Resources */ = {
+		7E6989570402772BB1EC2207 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84A71B50C5FABDD526888605 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,19 +371,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Example/Pods-HFTableCollectionBindingHelper_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F64F1CA22D54315186A9D366 /* Copy Pods Resources */ = {
+		961CC1C2B4A2C0064B2680E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AB0F351711A1D4DD8C66498 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HFTableCollectionBindingHelper_Tests/Pods-HFTableCollectionBindingHelper_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E21B7AF1A3E356C472014177 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -567,12 +567,13 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBE584CBED272F39A64C82C8 /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */;
+			baseConfigurationReference = 86E007BAC50EA2A2A172FE51 /* Pods-HFTableCollectionBindingHelper_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HFTableCollectionBindingHelper/HFTableCollectionBindingHelper-Prefix.pch";
 				INFOPLIST_FILE = "HFTableCollectionBindingHelper/HFTableCollectionBindingHelper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -582,12 +583,13 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C20B06BA66A3319C60621AF7 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */;
+			baseConfigurationReference = D571F5EB4A4354A5451962F4 /* Pods-HFTableCollectionBindingHelper_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HFTableCollectionBindingHelper/HFTableCollectionBindingHelper-Prefix.pch";
 				INFOPLIST_FILE = "HFTableCollectionBindingHelper/HFTableCollectionBindingHelper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -597,7 +599,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9471D2229075D08AA28397B1 /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */;
+			baseConfigurationReference = 51FC965CF9DBF091DE49646E /* Pods-HFTableCollectionBindingHelper_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -621,7 +623,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B8395D1CE853121A30AB7CE /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */;
+			baseConfigurationReference = 2EC614C43807084477D0A1C9 /* Pods-HFTableCollectionBindingHelper_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

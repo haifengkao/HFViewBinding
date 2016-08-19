@@ -1,10 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'HFTableCollectionBindingHelper_Example', :exclusive => true do
+target 'HFTableCollectionBindingHelper_Example' do
   pod "HFTableCollectionBindingHelper", :path => "../"
+  target 'HFTableCollectionBindingHelper_Tests' do
+    inherit! :search_paths
+    pod "HFTableCollectionBindingHelper", :path => "../"
+  end
 end
 
-target 'HFTableCollectionBindingHelper_Tests', :exclusive => true do
-  pod "HFTableCollectionBindingHelper", :path => "../"
-end
