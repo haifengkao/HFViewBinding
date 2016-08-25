@@ -1,5 +1,5 @@
 PODS:
-  - HFViewBinding (2.0.0):
+  - HFViewBinding (2.1.0):
     - KVOMutableArray
     - WZProtocolInterceptor
   - KVOMutableArray (1.6.0):
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HFViewBinding: f3cf8fbfcadf092504f6e76246b2412c97c9a7c0
+  HFViewBinding: 9f4e06ae9d997a1f321f3bf9027a399b98cbff25
   KVOMutableArray: 61732766a6b51a40646eb92d6c0f61557f0f035f
   WZProtocolInterceptor: 56c395e4b3323140421eba99546be362aabc041e
 
