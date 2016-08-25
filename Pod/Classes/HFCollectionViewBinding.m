@@ -155,4 +155,43 @@
                                       forIndexPath:indexPath];
     return cell;
 }
+
+- (void)insertItemsAtIndexPaths:(NSArray*)indexPaths
+{
+    // Need performBatchUpdates to avoid
+    // Fatal Exception: NSInternalInconsistencyException
+    // too many update animations on one view - limit is 31 in flight at a time
+    __weak UICollectionView* viewRef = self.collectionView;
+    [self.collectionView performBatchUpdates:^{
+            [viewRef insertItemsAtIndexPaths:indexPaths];
+    } completion:nil];
+}
+
+- (void)deleteItemsAtIndexPaths:(NSArray*)indexPaths
+{
+    __weak UICollectionView* viewRef = self.collectionView;
+    [self.collectionView performBatchUpdates:^{
+            [viewRef deleteItemsAtIndexPaths:indexPaths];
+    } completion:nil];
+}
+
+- (void)reloadItemsAtIndexPaths:(NSArray*)indexPaths
+{
+    [self.collectionView reloadItemsAtIndexPaths:indexPaths];
+}
+            
+- (void)insertSections:(NSIndexSet*)indexes
+{
+    [self.collectionView insertSections:indexes];
+}
+
+- (void)deleteSections:(NSIndexSet*)indexes
+{
+    [self.collectionView deleteSections:indexes];
+}
+
+- (void)reloadSections:(NSIndexSet*)indexes
+{
+    [self.collectionView reloadSections:indexes];
+}
 @end
