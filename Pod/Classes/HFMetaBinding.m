@@ -391,11 +391,9 @@ static inline id safe_cast_helper(id x, Class c) {
     NSString *first = [keyPath substringToIndex:delimeterRange.location];
     NSString *rest = [keyPath substringFromIndex:(delimeterRange.location + 1)];
     
-    if ([self canSetValueForKey:first]) {
-        return [[self valueForKey:first] canSetValueForKeyPath:rest];
-    }
-    
-    return NO;
+    // readonly property is good enough
+    // some properties (e.g. setTextLabel of UITableViewCell) is not writable
+    return [[self valueForKey:first] canSetValueForKeyPath:rest];
 }
 
 @end
