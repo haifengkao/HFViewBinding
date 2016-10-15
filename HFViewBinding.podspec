@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HFViewBinding"
-  s.version          = "2.2.0"
+  s.version          = "2.3.0"
   s.summary          = "iOS table view and collection view binding to arrays"
   s.description      = <<-DESC
                        helper functions to bind UITableView or UICollectionView instances to arrays
